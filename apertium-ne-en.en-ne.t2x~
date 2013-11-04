@@ -51,6 +51,15 @@
     <def-var n="genere"/>
   </section-def-vars>
 
+  <section-def-lists>
+    <def-list n="persons">
+      <list-item v="p1"/>
+      <list-item v="p2"/>
+      <list-item v="p3"/>
+      <list-item v="PD"/>
+    </def-list>
+  </section-def-lists>
+
   <section-def-macros>
 <!--
     <def-macro n="SN_SV" npar="1">
@@ -146,15 +155,21 @@
 		          <lit v="pro_verbcj"/>
 		        </equal>
                       </and>
-		      <equal>
-		        <clip pos="2" part="a_pers"/>
-		        <lit-tag v="PD"/>
-		      </equal>
+		      <and>
+			 <equal>
+				<clip pos="2" part="a_pers"/>
+				<lit-tag v="PD"/>
+			 </equal>
+		         <equal>
+		        	<clip pos="1" part="a_pers"/>
+		        	<list n="persons"/>
+		         </equal>
+		      </and>
                     </or>
 		    <not>
 		      <equal>
 			<clip pos="2" part="temps"/>
-			<lit-tag v="ger"/>
+			<lit-tag v="ant"/>
 		      </equal>
 		    </not>
 		  </and>
@@ -163,27 +178,33 @@
 		  <clip pos="2" part="a_pers"/>
 		  <clip pos="1" part="a_pers"/>
 		</let>
-	    <choose>
-	      <when>
-		<test>
-		<and>
-		    <equal>
-		      <clip pos="1" part="nbr"/>
-		      <lit-tag v="sg"/>
-		    </equal>
-		    <equal>
-		      <clip pos="1" part="a_pers"/>
-		      <lit-tag v="p3"/>
-		    </equal>
-		</and>
-		</test>
-		<let>
-		  <clip pos="2" part="temps"/>
-		  <lit-tag v="prs"/>
-		</let>
-	      </when>
+	       </when>
+		<otherwise>
+			<let>
+			   <var n="a_pers"/>
+			   <lit-tag v="p3"/>
+			</let>
+		</otherwise>
+	       <choose>
+		   <when>
+			<test>
+			<and>
+			    <equal>
+			      <clip pos="1" part="nbr"/>
+			      <lit-tag v="sg"/>
+			    </equal>
+			    <equal>
+			      <clip pos="1" part="a_pers"/>
+			      <lit-tag v="p3"/>
+			    </equal>
+			</and>
+			</test>
+			<let>
+			  <clip pos="2" part="temps"/>
+			  <lit-tag v="prs"/>
+			</let>
+		   </when>
 	      </choose>
-	      </when>
 	    </choose>
 	    <choose>
 	      <when>

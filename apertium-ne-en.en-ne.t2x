@@ -44,12 +44,40 @@
       <attr-item tags="p3"/>
       <attr-item tags="PD"/>
     </def-attr>
+
+    <def-attr n="temps">
+      <attr-item tags="cni"/>
+      <attr-item tags="fti"/>  
+      <attr-item tags="ifi"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="pii"/>
+      <attr-item tags="pis"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="prs"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="past"/>
+      <attr-item tags="pri"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="pprs"/>
+      <attr-item tags="subs"/>
+      <attr-item tags="ant"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
     <def-var n="nombre"/>
     <def-var n="genere"/>
   </section-def-vars>
+
+  <section-def-lists>
+    <def-list n="persons">
+      <list-item v="p1"/>
+      <list-item v="p2"/>
+      <list-item v="p3"/>
+      <list-item v="PD"/>
+    </def-list>
+  </section-def-lists>
 
   <section-def-macros>
 <!--
@@ -116,133 +144,128 @@
 	</choose>
     </def-macro>
 -->
-    <def-macro n="concord_SN_SV" npar="2">
-	<choose>
-	  <when>
-	    <test>
-	      <or>
-		<equal caseless="yes">
-		  <clip pos="1" part="lem"/>
-		  <lit v="prnsubj"/>
-		</equal>
-		<equal caseless="yes">
-		  <clip pos="1" part="lem"/>
-		  <lit v="nom"/>
-		</equal>
-	      </or>
-	    </test>	    
-	    <choose>
-	      <when>
-		<test>
-		  <and>
-                    <or>
-                      <and>
-		        <equal>
-		          <clip pos="2" part="a_pers"/>
-		          <lit-tag v="p3"/>
-		        </equal>
-		        <equal caseless="yes">
-		          <clip pos="2" part="lem"/>
-		          <lit v="pro_verbcj"/>
-		        </equal>
-                      </and>
-		      <equal>
-		        <clip pos="2" part="a_pers"/>
-		        <lit-tag v="PD"/>
-		      </equal>
-                    </or>
-		    <not>
-		      <equal>
-			<clip pos="2" part="temps"/>
-			<lit-tag v="ant"/>
-		      </equal>
-		    </not>
-		  </and>
-		</test>
-		<let>
-		  <clip pos="2" part="a_pers"/>
-		  <clip pos="1" part="a_pers"/>
-		</let>
-	    <choose>
-	      <when>
-		<test>
-		<and>
-		    <equal>
-		      <clip pos="1" part="nbr"/>
-		      <lit-tag v="sg"/>
-		    </equal>
-		    <equal>
-		      <clip pos="1" part="a_pers"/>
-		      <lit-tag v="p3"/>
-		    </equal>
-		</and>
-		</test>
-		<let>
-		  <clip pos="2" part="temps"/>
-		  <lit-tag v="prs"/>
-		</let>
-	      </when>
-	      </choose>
-	      </when>
-	    </choose>
-	    <choose>
-	      <when>
-		<test>
-		  <and>
-		    <equal>
-		      <clip pos="2" part="nbr"/>
-		      <lit-tag v="ND"/>
-		    </equal>
-		    <not>
-		      <equal>
-			<clip pos="2" part="temps"/>
-			<lit-tag v="ger"/>
-		      </equal>
-		    </not>
-		  </and>
-		</test>
-		<let>
-		  <clip pos="2" part="nbr"/>
-		  <clip pos="1" part="nbr"/>
-		</let>
-	      </when>
-	    </choose>
-	
-	    <choose>
-	      <when>
-		<test>
-		  <equal>
-		    <clip pos="2" part="gen"/>
-		    <lit-tag v="GD"/>
-		  </equal>
-		</test>
+	<def-macro n="concord_SN_SV" npar="2">
 		<choose>
-		  <when>
-		    <test>
-		      <not>
-			<equal>
-			  <clip pos="1" part="gen"/>
-			  <lit-tag v="mf"/>
-			</equal>
-		      </not>
-		    </test>
-		    <let>
-		      <clip pos="2" part="gen"/>
-		      <clip pos="1" part="gen"/>
-		    </let>
-		  </when>
-		  <otherwise>
-		    <let>
-		      <clip pos="2" part="gen"/>
-		      <lit-tag v="m"/>
-		    </let>
-		  </otherwise>		    
+	  		<when>
+	    		<test>
+	      			<or>
+						<equal caseless="yes">
+		  					<clip pos="1" part="lem"/>
+		  					<lit v="prnsubj"/>
+						</equal>
+						<equal caseless="yes">
+							<clip pos="1" part="lem"/>
+							<lit v="nom"/>
+						</equal>
+	      			</or>
+	    		</test>	    
+	    		<choose>
+	      			<when>
+						<test>
+		  					<and>
+                    			<!-- <or> -->
+	        						<equal caseless="yes">
+	          							<clip pos="1" part="lem"/>
+	          							<lit v="prnsubj"/>
+	        						</equal>
+		 							<equal>
+										<clip pos="2" part="a_pers"/>
+										<lit-tag v="PD"/>
+		 							</equal>
+                    			<!-- </or> -->
+		  					</and>
+						</test>
+						<let>
+							<clip pos="2" part="a_pers"/>
+							<clip pos="1" part="a_pers"/>
+						</let>
+	       			</when>
+					<otherwise>
+						<let>
+			   				<clip pos="2" part="a_pers"/>
+			   				<lit-tag v="p3"/>
+						</let>
+					</otherwise>
+	    		</choose>
+	       		<choose>
+		   			<when>
+						<test>
+							<and>
+			    				<equal>
+							    	<clip pos="1" part="temps"/>
+							    	<lit-tag v="ant"/>
+							    </equal>
+							    <equal>
+							    	<clip pos="1" part="lem"/>
+							    	<lit-tag v="nom"/>
+							    </equal>
+							</and>
+						</test>
+						<let>
+			  				<clip pos="2" part="a_pers"/>
+			  				<lit-tag v="p3"/>
+						</let>
+		   			</when>
+	      		</choose>
+
+		    	<choose>
+			    	<when>
+						<test>
+				  			<and>
+				    			<equal>
+				      				<clip pos="2" part="nbr"/>
+				      				<lit-tag v="ND"/>
+				    			</equal>
+				    			<not>
+				      				<equal>
+										<clip pos="2" part="temps"/>
+										<lit-tag v="ger"/>
+				      				</equal>
+				    			</not>
+				  			</and>
+						</test>
+						<let>
+				  			<clip pos="2" part="nbr"/>
+				  			<clip pos="1" part="nbr"/>
+						</let>
+			      	</when>
+			    </choose>
+	
+			    <choose>
+			    	<when>
+						<test>
+				  			<equal>
+				    			<clip pos="2" part="gen"/>
+				    			<lit-tag v="GD"/>
+				  			</equal>
+						</test>
+						<choose>
+					  		<when>
+					  			<test>
+					      			<not>
+										<equal>
+						  					<clip pos="1" part="gen"/>
+						  					<lit-tag v="mf"/>
+										</equal>
+					      			</not>
+					    		</test>
+					    		<let>
+					      			<clip pos="2" part="gen"/>
+					      			<clip pos="1" part="gen"/>
+					    		</let>
+					  		</when>
+					  		<otherwise>
+					    		<let>
+					      			<clip pos="2" part="gen"/>
+					      			<lit-tag v="m"/>
+					    		</let>
+					  		</otherwise>
+						</choose>
+			    	</when>
+			    </choose>
+			</when>
 		</choose>
-	      </when>
-	    </choose>
-	  </when>
-	</choose>
-     </def-macro>
+    </def-macro>
 
   </section-def-macros>
 

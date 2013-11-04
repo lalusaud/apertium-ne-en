@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/apertium/svn/!svn/ver/30983/incubator/apertium-ne-en/dev/pronoun
+END
+newdix
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/apertium/svn/!svn/ver/30983/incubator/apertium-ne-en/dev/pronoun/newdix
+END
+pronoun.ne.speling
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/p/apertium/svn/!svn/ver/30939/incubator/apertium-ne-en/dev/pronoun/pronoun.ne.speling
+END
+pronoun.ne.dix
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/apertium/svn/!svn/ver/30939/incubator/apertium-ne-en/dev/pronoun/pronoun.ne.dix
+END
+paradigm-chopper.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/apertium/svn/!svn/ver/30939/incubator/apertium-ne-en/dev/pronoun/paradigm-chopper.py
+END

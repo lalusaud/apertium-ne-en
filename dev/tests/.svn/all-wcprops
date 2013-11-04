@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/apertium/svn/!svn/ver/31155/incubator/apertium-ne-en/dev/tests
+END
+results1000.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/apertium/svn/!svn/ver/31034/incubator/apertium-ne-en/dev/tests/results1000.txt
+END
+test_top_1000.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/apertium/svn/!svn/ver/31155/incubator/apertium-ne-en/dev/tests/test_top_1000.cpp
+END
+gettext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/apertium/svn/!svn/ver/31034/incubator/apertium-ne-en/dev/tests/gettext.cpp
+END
+a.out
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/apertium/svn/!svn/ver/31155/incubator/apertium-ne-en/dev/tests/a.out
+END
+hp1000.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/apertium/svn/!svn/ver/31068/incubator/apertium-ne-en/dev/tests/hp1000.txt
+END
+hitparade_stripped.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/apertium/svn/!svn/ver/31037/incubator/apertium-ne-en/dev/tests/hitparade_stripped.txt
+END

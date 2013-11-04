@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/apertium/svn/!svn/ver/30983/incubator/apertium-ne-en/dev/determiner
+END
+newdix
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/apertium/svn/!svn/ver/30983/incubator/apertium-ne-en/dev/determiner/newdix
+END
+determiner.ne.speling
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/p/apertium/svn/!svn/ver/30939/incubator/apertium-ne-en/dev/determiner/determiner.ne.speling
+END
+determiner.ne.dix
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/apertium/svn/!svn/ver/30939/incubator/apertium-ne-en/dev/determiner/determiner.ne.dix
+END
+paradigm-chopper.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/p/apertium/svn/!svn/ver/30939/incubator/apertium-ne-en/dev/determiner/paradigm-chopper.py
+END

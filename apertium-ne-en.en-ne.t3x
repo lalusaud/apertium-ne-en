@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -*- nxml -*- -->
+<postchunk>
+
+  <section-def-cats>
+    <def-cat n="nom">
+      <cat-item name="nom"/>
+    </def-cat>
+    <def-cat n="nom_on">
+      <cat-item name="nom_on"/>
+    </def-cat>
+    <def-cat n="adj_nom">
+      <cat-item name="adj_nom"/>
+    </def-cat>
+    <def-cat n="SN_4words6"><!--4 words, maybe 5 or 6-->
+      <cat-item name="nom_verb_det_nom"/><!--4 words, maybe 5-->
+    </def-cat>
+
+  </section-def-cats>
+
+
+  <section-def-attrs>
+    <def-attr n="a_nom">
+      <attr-item tags="n"/>
+      <attr-item tags="np"/>
+    </def-attr>
+  </section-def-attrs>
+
+  <section-def-vars>
+    <def-var n="paraula"/>
+  </section-def-vars>
+
+  <section-rules>
+
+    <rule comment="CHUNK: nom">
+      <pattern>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="CHUNK: nom">
+      <pattern>
+        <pattern-item n="nom_on"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+	  <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="CHUNK: adj_nom">
+      <pattern>
+        <pattern-item n="adj_nom"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+	  <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="CHUNK: nom verb det nom">
+      <pattern>
+	<pattern-item n="SN_4words6"/>
+      </pattern>
+      <action>
+	    <out>
+	      <lu>
+		<clip pos="1" part="whole"/>
+	      </lu> 
+	      <b pos="1"/>
+	      <lu>
+		<clip pos="3" part="whole"/>
+	      </lu>
+	      <b pos="2"/>
+	      <lu>
+		<clip pos="4" part="whole"/>
+	      </lu>
+	      <b pos="3"/>
+	      <lu>
+		<clip pos="2" part="whole"/>
+	      </lu>
+	    </out>
+      </action>
+    </rule> 
+
+  </section-rules>
+</postchunk>

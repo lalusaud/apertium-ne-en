@@ -1,0 +1,3 @@
+    
+    lt-proc /usr/local/share/apertium/apertium-ne-en/en-ne.automorf.bin |apertium-tagger -g /usr/local/share/apertium/apertium-ne-en/en-ne.prob |apertium-pretransfer|apertium-transfer /usr/local/share/apertium/apertium-ne-en/apertium-ne-en.en-ne.t1x  /usr/local/share/apertium/apertium-ne-en/en-ne.t1x.bin  /usr/local/share/apertium/apertium-ne-en/en-ne.autobil.bin |apertium-interchunk /usr/local/share/apertium/apertium-ne-en/apertium-ne-en.en-ne.t2x  /usr/local/share/apertium/apertium-ne-en/en-ne.t2x.bin |apertium-postchunk /usr/local/share/apertium/apertium-ne-en/apertium-ne-en.en-ne.t3x  /usr/local/share/apertium/apertium-ne-en/en-ne.t3x.bin |lt-proc $1 /usr/local/share/apertium/apertium-ne-en/en-ne.autogen.bin 
+  

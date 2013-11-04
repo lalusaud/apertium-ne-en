@@ -35,7 +35,7 @@
 		<sdef n="prn" 	c="Pronoun"/> 
 		<sdef n="np" 	c="Propernoun"/> 
 		<sdef n="vblex" 	c="verb"/> 
-		<sdef n="vbser"		cc="Verb 'to be'"/>
+		<sdef n="vbser"		c="Verb 'to be'"/>
 		<sdef n="pres"/> 
 		<sdef n="pp"/> 
 		<sdef n="past"/> 
@@ -173,9 +173,22 @@
 <pardef n="हु__v">
 <e>	<p><l>हुँ</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p>	</e>
 <e>	<p><l>हौं</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p>	</e>
-<e>	<p><l>हुन</l>                                 <r>हु<s n="vblex"/><s n="pres"/></r></p></e>
-<e>	<p><l>हुन</l>                                 <r>हु<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p></e>
-<e>	<p><l>थियो</l>                                 <r>हु<s n="vblex"/><s n="past"/></r></p></e>
+<e>	<p><l>हौ</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p2"/></r></p>	</e>
+<e>	<p><l>हो</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/><s n="m"/><s n="sg"/></r></p>	</e>
+<e>	<p><l>हुन</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/><s n="f"/><s n="sg"/></r></p>	</e>
+<e>	<p><l>हुन</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/></r></p>	</e>
+
+<!--
+हौ <vbser><pri><p2><sp> / <vbser><pri><p3><pl>
+हो <vbser><pri><p3><m><sg>
+हुन <vbser><pri><p3><f><sg>
+थिए <vbser><past><p1><sg>
+थियौं <vbser><past><p1><pl>
+थियौ <vbser><past><p2><sp>
+थियो <vbser><past><p3><m><sg>
+थिईन <vbser><past><p3><f><sg>
+थिए <vbser><past><p3><pl>
+-->
 <!--
 <e>       <p><l>भयो</l>                                 <r>हु<s n="vblex"/><s n="past"/></r></p></e>
 -->

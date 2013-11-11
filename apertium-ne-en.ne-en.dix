@@ -34,7 +34,8 @@
 		<sdef n="sp" 	c="any"/> 
 		<sdef n="p1" 	c="first"/> 
 		<sdef n="p2" 	c="second"/> 
-		<sdef n="p3" 	c="third"/> 
+		<sdef n="p3" 	c="third"/>
+		<sdef n="adv"	c="adverb"/>
 		<sdef n="preadv" c="preadverb"/>
 		<sdef n="post" /> 
 		<sdef n="pr" /> 
@@ -105,10 +106,14 @@
 
 <e>       <p><l>कालो<s n="adj"/></l>               <r>black<s n="adj"/></r></p></e>
 <e>       <p><l>राम्रो<s n="adj"/></l>               <r>good<s n="adj"/></r></p></e>
+<e>       <p><l>राम्रो<s n="adv"/></l>               <r>good<s n="adv"/></r></p></e>
 <e>       <p><l>नराम्रो<s n="adj"/></l>               <r>bad<s n="adj"/></r></p></e>
 
 
+
+
 <e>       <p><l>घर<s n="n"/></l>   <r>house<s n="n"/></r></p></e>
+<e>	  <p><l>बिद्यार्थी<s n="n"/></l>	<r>student<s n="n"/></r></p></e>
 <e>       <p><l>कम्प्युटर<s n="n"/></l>            <r>computer<s n="n"/></r></p></e>
 <e>       <p><l>चरो<s n="n"/></l>                  <r>bird<s n="n"/></r></p></e>
 <e>       <p><l>ब्वाँसो<s n="n"/></l><r>wolf<s n="n"/></r></p></e>

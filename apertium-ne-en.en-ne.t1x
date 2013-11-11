@@ -33,6 +33,13 @@
       <cat-item tags="vbser.*"/>
     </def-cat>
 
+    <def-cat n="ger">
+      <cat-item tags="vblex.ger"/>
+      <cat-item tags="reporting.ger"/>
+      <cat-item tags="vblex.sep.ger"/>
+      <cat-item tags="vbser.ger"/>
+    </def-cat>
+
     <def-cat n="verbcj">
       <cat-item tags="vblex.pres"/>
       <cat-item tags="vblex.pres.*"/>
@@ -66,6 +73,10 @@
       <cat-item tags="vbser.past.*"/>
       <cat-item tags="vbser.pri.*"/>
     </def-cat>
+
+    <def-cat n="be">
+      <cat-item lemma="be" tags="vbser.*"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -98,6 +109,10 @@
     </def-attr>
     <def-attr n="a_det">
       <attr-item tags="det"/>
+    </def-attr>
+
+    <def-attr n="a_adj">
+      <attr-item tags="adj"/>
     </def-attr>
 
     <def-attr n="a_adv">
@@ -148,6 +163,7 @@
     <def-var n="pers_chunk"/>
     <def-var n="nbr_chunk"/>
     <def-var n="temps_chunk"/>
+    <def-var n="gen_chunk"/>
     <def-var n="lema_SV"/>
     <def-var n="verbfinal"/>
   </section-def-vars>
@@ -448,13 +464,16 @@
           <chunk name="adj_nom" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="2" side="tl" part="a_gen"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-	      <clip pos="1" side="tl" part="a_adj"/>
-	      <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
+      	      <clip pos="1" side="tl" part="a_adj"/>
+              <clip pos="2" side="tl" part="a_gen" link-to="2"/>
+      	      <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
             </lu>
-	    <b pos="1"/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
@@ -471,6 +490,8 @@
       </pattern>
       <action>
         <choose>
+
+          <!-- If the verb is present [example: is, am, are]-->
           <when>
             <test>
               <equal>
@@ -482,20 +503,7 @@
               <clip pos="1" side="tl" part="temps"/>
               <lit-tag v="pri"/>
             </let>
-            <let>
-              <var n="lema_SV"/>
-              <lit v="be"/>
-            </let>
-            <let>
-              <var n="temps_chunk"/>
-              <clip pos="1" side="tl" part="temps"/>
-            </let>
-        		<!--
-        		<let>
-        		  <var n="pers_chunk"/>
-        		  <clip pos="1" side="tl" part="a_pers"/>
-        		</let>
-        		-->
+
             <choose>
               <when>
                 <test>
@@ -521,6 +529,18 @@
               <clip pos="1" side="tl" part="a_nbr"/>
             </let>
             <let>
+              <var n="lema_SV"/>
+              <lit v="be"/>
+            </let>
+            <let>
+              <var n="temps_chunk"/>
+              <clip pos="1" side="tl" part="temps"/>
+            </let>
+            <let>
+              <var n="gen_chunk"/>
+              <lit-tag v="GD"/>
+            </let>
+            <let>
               <var n="verbfinal"/>
               <concat>
                 <clip pos="1" side="tl" part="lemh"/>
@@ -533,6 +553,43 @@
               </concat>
             </let>
           </when>
+
+          <!-- If the verb is past [example: was, were]-->
+          <when>
+            <test>
+              <equal>
+                <clip pos="1" side="tl" part="temps"/>
+                <lit-tag v="past"/>
+              </equal>
+            </test>
+            <let>
+              <var n="lema_SV"/>
+              <lit v="be"/>
+            </let>
+            <let>
+              <var n="temps_chunk"/>
+              <clip pos="1" side="sl" part="temps"/>
+            </let>
+            <let>
+              <var n="nbr_chunk"/>
+              <lit-tag v="ND"/>
+            </let>
+            <let>
+              <var n="gen_chunk"/>
+              <lit-tag v="GD"/>
+            </let>
+            <let>
+              <var n="verbfinal"/>
+              <concat>
+                <clip pos="1" side="tl" part="lemh"/>
+                <lit-tag v="vbser"/>
+                <lit-tag v="2"/>
+                <lit-tag v="3"/>
+                <lit-tag v="4"/>
+                <clip pos="1" side="tl" part="lemq"/>
+              </concat>
+            </let>
+          </when>
         </choose>
         <out>
           <chunk namefrom="lema_SV" case="caseFirstWord">
@@ -541,7 +598,7 @@
               <tag><lit-tag v="vbser"/></tag>
       	      <tag><var n="temps_chunk"/></tag>
       	      <tag><var n="pers_chunk"/></tag>
-              <tag><lit-tag v="GD"/></tag>
+              <tag><var n="gen_chunk"/></tag>
       	      <tag><var n="nbr_chunk"/></tag>
             </tags>
             <lu>
@@ -566,10 +623,10 @@
 				<lit-tag v="pres"/>
 			    </equal>
 		    </test>
-		    <let>
-			<clip pos="1" side="tl" part="temps"/>
-			<lit-tag v="pri"/>
-		    </let>
+    		<let>
+    			<clip pos="1" side="tl" part="temps"/>
+    			<lit-tag v="pri"/>
+    		</let>
 		    <let>
 		    	<var n="lema_SV"/>
 		    	<lit v="verbcj"/>
@@ -620,6 +677,100 @@
       </action>
     </rule>
 
+
+    <rule comment="REGLA: BE GER (am saying -> estic dient)">
+      <pattern>
+        <pattern-item n="be"/>
+        <pattern-item n="ger"/>
+      </pattern>
+      <action>
+        <choose>
+          <when>
+            <test>
+              <equal>
+                <clip pos="1" side="sl" part="temps"/>
+                <lit-tag v="past"/>
+              </equal>
+            </test>
+            <let>
+                <var n="temps_chunk"/>
+                <lit-tag v="vblex"/>
+            </let>
+            <out>
+              <chunk name="verbcj" case="caseFirstWord">
+              <tags>
+                <tag><lit-tag v="SV"/></tag>
+                <tag><var n="temps_chunk"/></tag>
+                <tag><var n="pers_chunk"/></tag>
+                <tag><var n="nbr_chunk"/></tag>
+              </tags>
+              <lu>
+                <var n="verbfinal"/>
+                <concat>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="vbser"/>
+                  <lit-tag v="2"/>
+                  <lit-tag v="3"/>
+                  <lit-tag v="4"/>
+                  <lit-tag v="5"/>
+                </concat>
+              </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <let>
+              <var n="temps_chunk"/>
+              <lit-tag v="pri"/>
+            </let>
+            <let>
+              <var n="pers_chunk"/>
+              <lit-tag v="PD"/>
+            </let>
+            <let>
+              <var n="gen_chunk"/>
+              <lit-tag v="GD"/>
+            </let>
+            <let>
+              <var n="nbr_chunk"/>
+              <lit-tag v="ND"/>
+            </let>
+
+            <out>
+              <chunk name="be_ger" case="caseFirstWord">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="temps_chunk"/></tag>
+                  <tag><lit-tag v="ger"/></tag>
+                  <tag><var n="pers_chunk"/></tag>
+                  <tag><var n="gen_chunk"/></tag>
+                  <tag><var n="nbr_chunk"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="lemh"/> 
+                  <clip pos="2" side="tl" part="a_verb"/>
+                  <clip pos="2" side="tl" part="temps"/>
+                  <clip pos="2" side="tl" part="lemq"/>
+                </lu>
+                <b pos="1"/>
+                <lu>
+                  <var n="verbfinal"/>
+                  <concat>
+                    <clip pos="1" side="tl" part="lem"/>
+                    <lit-tag v="vbser"/>
+                    <lit-tag v="2"/>
+                    <lit-tag v="3"/>
+                    <lit-tag v="4"/>
+                    <lit-tag v="5"/>
+                    <lit-tag v="6"/>
+                  </concat>
+                </lu>
+              </chunk>
+            </out>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
 
 
   </section-rules>

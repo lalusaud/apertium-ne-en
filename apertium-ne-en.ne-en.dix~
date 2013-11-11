@@ -34,7 +34,8 @@
 		<sdef n="sp" 	c="any"/> 
 		<sdef n="p1" 	c="first"/> 
 		<sdef n="p2" 	c="second"/> 
-		<sdef n="p3" 	c="third"/> 
+		<sdef n="p3" 	c="third"/>
+		<sdef n="adv"	c="adverb"/>
 		<sdef n="preadv" c="preadverb"/>
 		<sdef n="post" /> 
 		<sdef n="pr" /> 
@@ -105,7 +106,10 @@
 
 <e>       <p><l>कालो<s n="adj"/></l>               <r>black<s n="adj"/></r></p></e>
 <e>       <p><l>राम्रो<s n="adj"/></l>               <r>good<s n="adj"/></r></p></e>
+<e>       <p><l>राम्रो<s n="adv"/></l>               <r>good<s n="adv"/></r></p></e>
 <e>       <p><l>नराम्रो<s n="adj"/></l>               <r>bad<s n="adj"/></r></p></e>
+
+
 
 
 <e>       <p><l>घर<s n="n"/></l>   <r>house<s n="n"/></r></p></e>
@@ -220,9 +224,9 @@
 <e>       <p><l>उपभोक्ता<s n="n"/></l>             <r>consumer<s n="n"/></r></p></e>
 <e> 	  <p><l>व्यक्ति<s n="n"/></l> 			<r>person<s n="n"/></r></p></e>
 <e> 	  <p><l>मानिस<s n="n"/></l> 			<r>man<s n="n"/></r></p></e>
+<e> 	  <p><l>भात<s n="n"/></l> 	<r>rice<s n="n"/></r></p></e>
 
 <e> 	  <p><l>एउटा<s n="det"/></l> 	<r>a<s n="det"/><s n="ind"/></r></p></e>
-<e> 	  <p><l>भात<s n="n"/></l> 	<r>rice<s n="n"/></r></p></e>
     
     
 <e>       <p><l>मा<s n="post"/></l>             <r>on<s n="pr"/></r></p></e>

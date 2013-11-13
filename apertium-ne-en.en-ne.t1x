@@ -77,6 +77,17 @@
     <def-cat n="be">
       <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
+
+    <def-cat n="cnj">
+      <cat-item tags="cnjcoo"/>
+      <cat-item tags="cnjsub"/>
+      <cat-item tags="cnjadv"/>
+    </def-cat>
+
+    <def-cat n="cnjcoo">
+      <cat-item lemma="and" tags="cnjcoo"/>
+      <cat-item lemma="or" tags="cnjcoo"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -109,6 +120,10 @@
     </def-attr>
     <def-attr n="a_det">
       <attr-item tags="det"/>
+    </def-attr>
+
+    <def-attr n="a_ant">
+	<attr-item tags="ant"/>
     </def-attr>
 
     <def-attr n="a_adj">
@@ -176,6 +191,39 @@
       <list-item v="PD"/>
     </def-list>
   </section-def-lists>
+
+  <section-def-macros>
+	<def-macro n="elimina_GDND" npar="1">
+	      <choose>
+		<when>
+		  <test>
+		    <equal>
+		      <clip pos="1" side="tl" part="gen"/>
+		      <lit-tag v="GD"/>
+		    </equal>
+		  </test>
+		  <let>
+		      <clip pos="1" side="tl" part="gen"/>
+		      <lit-tag v="m"/>
+		  </let>
+		</when>
+	      </choose>
+	      <choose>
+		<when>
+		  <test>
+		    <equal>
+		      <clip pos="1" side="tl" part="nbr"/>
+		      <lit-tag v="ND"/>
+		    </equal>
+		  </test>
+		  <let>
+		      <clip pos="1" side="tl" part="nbr"/>
+		      <lit-tag v="sg"/>
+		  </let>
+		</when>
+	      </choose>  
+	</def-macro>
+  </section-def-macros>
 
   <section-rules>
 
@@ -772,6 +820,71 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: NOM1 and NOM2 (Ram and Shyam => राम र श्याम)">
+      <pattern>
+	<pattern-item n="nom"/>
+	<pattern-item n="cnjcoo"/>
+	<pattern-item n="nom"/>
+      </pattern>
+      <action>	
+	<call-macro n="elimina_GDND">
+	  <with-param pos="3"/>
+	</call-macro>
+	<call-macro n="elimina_GDND">
+	  <with-param pos="1"/>
+	</call-macro>
+	<choose><!--To determine value of variables of gender-->
+	  <when> 
+	    <test>
+	      <and>
+		<equal>
+		  <clip pos="1" side="tl" part="gen"/>
+		  <lit-tag v="f"/>
+		</equal>
+		<equal>
+		  <clip pos="3" side="tl" part="gen"/>
+		  <lit-tag v="f"/>
+		</equal>
+	      </and>	    
+	    </test>
+	    <let><var n="genere"/><lit-tag v="f"/></let>
+	  </when>
+	  <otherwise>
+	    <let><var n="genere"/><lit-tag v="m"/></let>
+	  </otherwise>
+	</choose>
+	<out> 
+	  <chunk name="nom_conj_nom" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="SN.UNDET"/></tag>
+	      <tag><var n="genere"/></tag>
+	      <tag><lit-tag v="pl"/></tag>
+	    </tags>
+	    <lu>  
+	      <clip pos="1" side="tl" part="lemh"/> 
+	      <clip pos="1" side="tl" part="a_nom"/>
+	      <clip pos="1" side="tl" part="a_ant"/>
+	      <clip pos="1" side="tl" part="a_gen"/>
+	      <clip pos="1" side="tl" part="a_nbr"/>
+	      <clip pos="1" side="tl" part="lemq"/>  
+	    </lu> 
+	    <b pos="1"/>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+	    <b pos="2"/>
+	    <lu>  
+	      <clip pos="3" side="tl" part="lemh"/> 
+	      <clip pos="3" side="tl" part="a_nom"/>
+	      <clip pos="1" side="tl" part="a_ant"/>
+	      <clip pos="3" side="tl" part="a_gen"/>
+	      <clip pos="3" side="tl" part="a_nbr"/>
+	      <clip pos="3" side="tl" part="lemq"/>  
+	    </lu> 
+	  </chunk>
+	</out>
+      </action>
+    </rule>
 
   </section-rules>
 </transfer>

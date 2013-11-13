@@ -15,6 +15,7 @@
       <cat-item tags="SV"/>
       <cat-item tags="SV.*"/>
       <cat-item lemma="verbcj" tags="SV.*"/>
+      <cat-item lemma="be" tags="vbser.*"/>
     </def-cat>
     <def-cat n="DET">
       <cat-item tags="DET"/>
@@ -44,6 +45,25 @@
       <attr-item tags="p3"/>
       <attr-item tags="PD"/>
     </def-attr>
+
+    <def-attr n="temps">
+      <attr-item tags="cni"/>
+      <attr-item tags="fti"/>  
+      <attr-item tags="ifi"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="pii"/>
+      <attr-item tags="pis"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="prs"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="past"/>
+      <attr-item tags="pri"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="pprs"/>
+      <attr-item tags="subs"/>
+      <attr-item tags="ant"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
@@ -61,209 +81,134 @@
   </section-def-lists>
 
   <section-def-macros>
-<!--
-    <def-macro n="SN_SV" npar="1">
-	<choose>
-	  <when>
-	    <test>
-	      <not>
-		<or>
-		  <equal>
-		    <clip pos="1" part="temps"/>
-		    <lit-tag v="inf"/>
-		  </equal> 
-		  <equal>
-		    <clip pos="1" part="temps"/>
-		    <lit-tag v="ger"/>
-		  </equal>
-		</or>
-	      </not>
-	    </test>
-	    <choose>
-	      <when>
-		<test>
-		  <equal>
-		    <clip pos="1" part="a_pers"/>
-		    <lit-tag v="PD"/>
-		  </equal>
-		</test>
-		<let>
-		  <clip pos="1" part="a_pers"/>
-		  <lit-tag v="p3"/>
-		</let>
-	      </when>
-	    </choose>
-	    <choose>
-	      <when>
-		<test>
-		  <equal>
-		    <clip pos="1" part="nbr"/>
-		    <lit-tag v="ND"/>
-		  </equal>
-		</test>
-		<let>
-		  <clip pos="1" part="nbr"/>
-		  <lit-tag v="sg"/>
-		</let>
-	      </when>
-	    </choose>
-	    <choose>
-	      <when>
-		<test>
-		  <equal>
-		    <clip pos="1" part="gen"/>
-		    <lit-tag v="GD"/>
-		  </equal>
-		</test>
-		<let>
-		  <clip pos="1" part="gen"/>
-		  <lit-tag v="mf"/>
-		</let>
-	      </when>
-	    </choose>
-	  </when>
-	</choose>
-    </def-macro>
--->
-    <def-macro n="concord_SN_SV" npar="2">
-	<choose>
-	  <when>
-	    <test>
-	      <or>
-		<equal caseless="yes">
-		  <clip pos="1" part="lem"/>
-		  <lit v="prnsubj"/>
-		</equal>
-		<equal caseless="yes">
-		  <clip pos="1" part="lem"/>
-		  <lit v="nom"/>
-		</equal>
-	      </or>
-	    </test>	    
-	    <choose>
-	      <when>
-		<test>
-		  <and>
-                    <or>
-                      <and>
-		        <equal>
-		          <clip pos="2" part="a_pers"/>
-		          <lit-tag v="p3"/>
-		        </equal>
-		        <equal caseless="yes">
-		          <clip pos="2" part="lem"/>
-		          <lit v="pro_verbcj"/>
-		        </equal>
-                      </and>
-		      <and>
-			 <equal>
-				<clip pos="2" part="a_pers"/>
-				<lit-tag v="PD"/>
-			 </equal>
-		         <equal>
-		        	<clip pos="1" part="a_pers"/>
-		        	<list n="persons"/>
-		         </equal>
-		      </and>
-                    </or>
-		    <not>
-		      <equal>
-			<clip pos="2" part="temps"/>
-			<lit-tag v="ant"/>
-		      </equal>
-		    </not>
-		  </and>
-		</test>
-		<let>
-		  <clip pos="2" part="a_pers"/>
-		  <clip pos="1" part="a_pers"/>
-		</let>
-	       </when>
-		<otherwise>
-			<let>
-			   <var n="a_pers"/>
-			   <lit-tag v="p3"/>
-			</let>
-		</otherwise>
-	       <choose>
-		   <when>
-			<test>
-			<and>
-			    <equal>
-			      <clip pos="1" part="nbr"/>
-			      <lit-tag v="sg"/>
-			    </equal>
-			    <equal>
-			      <clip pos="1" part="a_pers"/>
-			      <lit-tag v="p3"/>
-			    </equal>
-			</and>
-			</test>
-			<let>
-			  <clip pos="2" part="temps"/>
-			  <lit-tag v="prs"/>
-			</let>
-		   </when>
-	      </choose>
-	    </choose>
-	    <choose>
-	      <when>
-		<test>
-		  <and>
-		    <equal>
-		      <clip pos="2" part="nbr"/>
-		      <lit-tag v="ND"/>
-		    </equal>
-		    <not>
-		      <equal>
-			<clip pos="2" part="temps"/>
-			<lit-tag v="ger"/>
-		      </equal>
-		    </not>
-		  </and>
-		</test>
-		<let>
-		  <clip pos="2" part="nbr"/>
-		  <clip pos="1" part="nbr"/>
-		</let>
-	      </when>
-	    </choose>
-	
-	    <choose>
-	      <when>
-		<test>
-		  <equal>
-		    <clip pos="2" part="gen"/>
-		    <lit-tag v="GD"/>
-		  </equal>
-		</test>
+	<def-macro n="concord_SN_SV" npar="2">
 		<choose>
-		  <when>
-		    <test>
-		      <not>
-			<equal>
-			  <clip pos="1" part="gen"/>
-			  <lit-tag v="mf"/>
-			</equal>
-		      </not>
-		    </test>
-		    <let>
-		      <clip pos="2" part="gen"/>
-		      <clip pos="1" part="gen"/>
-		    </let>
-		  </when>
-		  <otherwise>
-		    <let>
-		      <clip pos="2" part="gen"/>
-		      <lit-tag v="m"/>
-		    </let>
-		  </otherwise>		    
+	  	    <when>
+	    		<test>
+	      			<or>
+					<equal caseless="yes">
+	  					<clip pos="1" part="lem"/>
+	  					<lit v="prnsubj"/>
+					</equal>
+					<equal caseless="yes">
+						<clip pos="1" part="lem"/>
+						<lit v="nom"/>
+					</equal>
+	      			</or>
+	    		</test>	    
+	    		<choose>
+	      			<when>
+					<test>
+	  					<and>
+		              			   <!-- <or> -->
+							<equal caseless="yes">
+	  							<clip pos="1" part="lem"/>
+	  							<lit v="prnsubj"/>
+							</equal>
+	 						<equal>
+								<clip pos="2" part="a_pers"/>
+								<lit-tag v="PD"/>
+	 						</equal>
+		            			   <!-- </or> -->
+	  					</and>
+					</test>
+					<let>
+						<clip pos="2" part="a_pers"/>
+						<clip pos="1" part="a_pers"/>
+					</let>
+	       			</when>
+				<otherwise>
+					<let>
+		   				<clip pos="2" part="a_pers"/>
+		   				<lit-tag v="p3"/>
+					</let>
+				</otherwise>
+	    		</choose>
+	       		<choose>
+	   			<when>
+					<test>
+						<and>
+		    				    <equal>
+						    	<clip pos="1" part="temps"/>
+						    	<lit-tag v="ant"/>
+						    </equal>
+						    <equal>
+						    	<clip pos="1" part="lem"/>
+						    	<lit-tag v="nom"/>
+						    </equal>
+						</and>
+					</test>
+					<let>
+		  				<clip pos="2" part="a_pers"/>
+		  				<lit-tag v="p3"/>
+					</let>
+	   			</when>
+	      		</choose>
+
+		    	<choose>
+			    	<when>
+					<test>
+			  		    <and>
+			    			<equal>
+			      				<clip pos="2" part="nbr"/>
+			      				<lit-tag v="ND"/>
+			    			</equal>
+			    			<not>
+			      				<equal>
+								<clip pos="2" part="temps"/>
+								<lit-tag v="ger"/>
+			      				</equal>
+			    			</not>
+			  		    </and>
+					</test>
+					<let>
+			  			<clip pos="2" part="nbr"/>
+			  			<clip pos="1" part="nbr"/>
+					</let>
+			      	</when>
+			</choose>
+	
+			<choose>
+			    	<when>
+					<test>
+			  			<equal>
+				    			<clip pos="2" part="gen"/>
+				    			<lit-tag v="GD"/>
+			  			</equal>
+					</test>
+					<choose>
+				  		<when>
+				  		   <test>
+				      			   <not>
+								<equal>
+					  				<clip pos="1" part="gen"/>
+					  				<lit-tag v="mf"/>
+								</equal>
+				      			   </not>
+				    		   </test>
+				    		   <let>
+				      			<clip pos="2" part="gen"/>
+				      			<clip pos="1" part="gen"/>
+				    		   </let>
+				  		</when>
+				  		<otherwise>
+				    		   <let>
+				      			<clip pos="2" part="gen"/>
+				      			<lit-tag v="m"/>
+				    		   </let>
+				  		</otherwise>
+					</choose>
+			    	</when>
+			</choose>
+			<!-- 
+			    <let>
+				<clip pos="2" part="nbr"/>
+				<clip pos="1" part="nbr"/>
+			    </let>
+			-->
+			</when>
 		</choose>
-	      </when>
-	    </choose>
-	  </when>
-	</choose>
-     </def-macro>
+    </def-macro>
 
   </section-def-macros>
 
@@ -347,29 +292,24 @@
         <pattern-item n="SN"/>
       </pattern>
       <action>
-	<call-macro n="concord_SN_SV">
-	  <with-param pos="1"/>
-	  <with-param pos="2"/>
-	</call-macro>
-        <out>
-          <chunk>
-            <clip pos="1" part="lem"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-          </chunk>
-	  <b pos="1"/>
-          <chunk>
-            <clip pos="3" part="lem"/>
-            <clip pos="3" part="tags"/>
-            <clip pos="3" part="chcontent"/>
-          </chunk>
-	  <b pos="2"/>
-          <chunk>
-            <clip pos="2" part="lem"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-          </chunk>
-        </out>
+
+        	<out>
+        		<chunk>
+				<clip pos="1" part="whole"/>
+			</chunk>
+
+			<b pos="1"/>
+			
+			<chunk>
+				<clip pos="3" part="whole"/>
+			</chunk>
+			
+			<b pos="2"/>
+			
+			<chunk>
+				<clip pos="2" part="whole"/>
+			</chunk>
+	        </out>
       </action>
     </rule>
 
@@ -380,6 +320,11 @@
         <pattern-item n="det_nom"/>
       </pattern>
       <action>
+		<call-macro n="concord_SN_SV">
+		  <with-param pos="1"/>
+		  <with-param pos="2"/>
+		</call-macro>
+
         <out>
           <chunk>
             <clip pos="1" part="whole"/>

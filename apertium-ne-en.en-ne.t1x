@@ -502,7 +502,7 @@
 
 
 
-    <rule comment="REGLA: ARTICLE NOM">
+    <rule comment="REGLA: ADJ NOM (good friends)">
       <pattern>
         <pattern-item n="adj"/>
         <pattern-item n="nom"/>
@@ -512,18 +512,43 @@
           <chunk name="adj_nom" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
-              <tag><clip pos="2" side="tl" part="a_gen"/></tag>
-              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="lem"/>
-      	      <clip pos="1" side="tl" part="a_adj"/>
-              <clip pos="2" side="tl" part="a_gen" link-to="2"/>
-      	      <clip pos="2" side="tl" part="a_nbr" link-to="3"/>
+		<clip pos="1" side="tl" part="whole"/>
+		<clip pos="2" side="tl" part="a_nbr"/>
             </lu>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: PREADV ADJ NOM">
+      <pattern>
+        <pattern-item n="preadv"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="preadv_adj_nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+	      <clip pos="3" side="tl" part="a_nbr"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
@@ -572,10 +597,28 @@
                 </let>
               </otherwise>
             </choose>
-            <let>
-              <var n="nbr_chunk"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
-            </let>
+	    
+	    <choose>
+		<when>
+		   <test>
+			<equal>
+		           <clip pos="1" side="tl" part="a_nbr"/>
+			   <lit-tag v="sg"/>
+			</equal>
+		   </test>
+		   <let>
+		      <var n="nbr_chunk"/>
+		      <clip pos="1" side="tl" part="a_nbr"/>
+		   </let>
+		</when>
+		<otherwise>
+		    <let>
+		      <var n="nbr_chunk"/>
+		      <lit-tag v="pl"/>
+		    </let>
+		</otherwise>
+	    </choose>
+
             <let>
               <var n="lema_SV"/>
               <lit v="be"/>
@@ -833,26 +876,8 @@
 	<call-macro n="elimina_GDND">
 	  <with-param pos="1"/>
 	</call-macro>
-	<choose><!--To determine value of variables of gender-->
-	  <when> 
-	    <test>
-	      <and>
-		<equal>
-		  <clip pos="1" side="tl" part="gen"/>
-		  <lit-tag v="f"/>
-		</equal>
-		<equal>
-		  <clip pos="3" side="tl" part="gen"/>
-		  <lit-tag v="f"/>
-		</equal>
-	      </and>	    
-	    </test>
-	    <let><var n="genere"/><lit-tag v="f"/></let>
-	  </when>
-	  <otherwise>
-	    <let><var n="genere"/><lit-tag v="m"/></let>
-	  </otherwise>
-	</choose>
+	<let><var n="genere"/><lit-tag v="mf"/></let>
+
 	<out> 
 	  <chunk name="nom_conj_nom" case="caseFirstWord">
 	    <tags>

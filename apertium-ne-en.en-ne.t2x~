@@ -92,7 +92,7 @@
 					</equal>
 					<equal caseless="yes">
 						<clip pos="1" part="lem"/>
-						<lit v="nom"/>
+						<lit v="nom_conj_nom"/>
 					</equal>
 	      			</or>
 	    		</test>	    
@@ -292,7 +292,10 @@
         <pattern-item n="SN"/>
       </pattern>
       <action>
-
+		<call-macro n="concord_SN_SV">
+		  <with-param pos="1"/>
+		  <with-param pos="2"/>
+		</call-macro>
         	<out>
         		<chunk>
 				<clip pos="1" part="whole"/>

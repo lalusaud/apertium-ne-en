@@ -92,6 +92,10 @@
 					</equal>
 					<equal caseless="yes">
 						<clip pos="1" part="lem"/>
+						<lit v="nom_conj_nom"/>
+					</equal>
+					<equal caseless="yes">
+						<clip pos="1" part="lem"/>
 						<lit v="nom"/>
 					</equal>
 	      			</or>

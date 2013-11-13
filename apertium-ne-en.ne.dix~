@@ -114,13 +114,13 @@
 <pardef n="काल/ो__adj">
 <e>       <p><l>ो</l>                                  <r>ो<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
 <e>       <p><l>ी</l>                                  <r>ो<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-<e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
-<e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+<e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="pl"/></r></p></e>
+<e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="pl"/></r></p></e>
 <e>       <p><l>ी</l>                                  <r>ो<s n="adj"/><s n="sp"/></r></p></e>
-<e r="RL">       <p><l>ो</l>                                  <r>ो<s n="adj"/></r></p></e>
-<e>	 <p><l>ो</l>					<r>ो<s n="adj"/><s n="sint"/></r></p></e>
-<e r="RL">       <p><l>ो</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="m"/></r></p></e>
-<e r="RL">       <p><l>ी</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="f"/></r></p></e>
+<e r="RL"><p><l>ो</l>                                  <r>ो<s n="adj"/></r></p></e>
+<e>	  <p><l>ो</l>					<r>ो<s n="adj"/><s n="sint"/></r></p></e>
+<e r="RL"><p><l>ो</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="m"/></r></p></e>
+<e r="RL"><p><l>ी</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="f"/></r></p></e>
 </pardef>
 
 <pardef n="सुन्दर__adj">
@@ -171,16 +171,13 @@
 <e>       <p><l>्लान्</l>                              <r><s n="vblex"/><s n="per:any"/><s n="pl"/><s n="tam:लान्"/></r></p></e>
 </pardef>
 
-
-
-
 <pardef n="हु__v">
 <e>	<p><l>हुँ</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p>	</e>
 <e>	<p><l>हौं</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p>	</e>
-<e>	<p><l>हौ</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p2"/></r></p>	</e>
+<e>	<p><l>हौ</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p>	</e>
 <e>	<p><l>हो</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/><s n="m"/><s n="sg"/></r></p>	</e>
 <e>	<p><l>हुन</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/><s n="f"/><s n="sg"/></r></p>	</e>
-<e>	<p><l>हुन</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/></r></p>	</e>
+<e>	<p><l>हुन</l>				<r>हु<s n="vbser"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p>	</e>
 <e>	<p><l>थिए</l>				<r>हु<s n="vbser"/><s n="past"/><s n="pl"/></r></p>	</e>
 <e>	<p><l>थियो</l>				<r>हु<s n="vbser"/><s n="past"/><s n="m"/><s n="sg"/></r></p>	</e>
 <e>	<p><l>थिईन्</l>				<r>हु<s n="vbser"/><s n="past"/><s n="f"/><s n="sg"/></r></p>	</e>
@@ -589,7 +586,7 @@
 
 <e lm="कालो"><i>काल</i><par n="काल/ो__adj"/></e>
 <e lm="नराम्रो"><i>नराम्र</i><par n="काल/ो__adj"/></e>
-<e lm="राम्रो"><i>राम्रो</i><par n="काल/ो__adj"/></e>
+<e lm="राम्रो"><i>राम्र</i><par n="काल/ो__adj"/></e>
 
 <!-- Nepali Names -->
 <e lm="राम"><i>राम</i><par n="राम__pn"/></e>

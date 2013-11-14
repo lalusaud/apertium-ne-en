@@ -210,8 +210,26 @@
 				<clip pos="1" part="nbr"/>
 			    </let>
 			-->
-			</when>
-		</choose>
+		</when>
+	  </choose>
+	  <choose>
+		<when>
+		    <test>
+			<equal>
+				<clip pos="1" part="lem"/>
+				<lit v="det"/>
+			</equal>
+		    </test>
+		    <let>
+			<clip pos="2" part="gen"/>
+			<lit-tag v="m"/>
+		    </let>
+		    <let>
+			<clip pos="2" part="a_pers"/>
+			<lit-tag v="p3"/>
+		    </let>
+		</when>
+	  </choose>
     </def-macro>
 
   </section-def-macros>
@@ -253,6 +271,39 @@
 		</chunk>
 	</out>
       </action>
+    </rule>
+
+    <rule comment="REGLA: DET SV DET SN (What is your name?)">
+	<pattern>
+	   <pattern-item n="DET"/>
+	   <pattern-item n="SV"/>
+	   <pattern-item n="DET"/>
+	   <pattern-item n="SN"/>
+	</pattern>
+	<action>
+	<call-macro n="concord_SN_SV">
+	  <with-param pos="1"/>
+	  <with-param pos="2"/>
+	</call-macro>
+	<out>
+		<chunk>
+			<clip pos="3" part="whole"/>
+		</chunk>
+		<b/>
+		<chunk>
+			<clip pos="4" part="whole"/>
+		</chunk>
+		<b/>
+		<chunk>
+			<clip pos="1" part="whole"/>
+		</chunk>
+		<b/>
+		<chunk>
+			<clip pos="2" part="whole"/>
+		</chunk>
+	</out>
+	
+	</action>
     </rule>
 
     <rule comment="REGLA: SN SVpast SN">

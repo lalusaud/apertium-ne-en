@@ -15,7 +15,6 @@
     <def-cat n="SN_4words6"><!--4 words, maybe 5 or 6-->
       <cat-item name="nom_verb_det_nom"/><!--4 words, maybe 5-->
     </def-cat>
-
   </section-def-cats>
 
 

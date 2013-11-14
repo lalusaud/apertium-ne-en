@@ -15,7 +15,6 @@
     <def-cat n="SN_4words6"><!--4 words, maybe 5 or 6-->
       <cat-item name="nom_verb_det_nom"/><!--4 words, maybe 5-->
     </def-cat>
-
   </section-def-cats>
 
 
@@ -101,6 +100,33 @@
 	      <lu>
 		<clip pos="2" part="whole"/>
 	      </lu>
+	    </out>
+      </action>
+    </rule> 
+
+    <rule comment="CHUNK: nom verb det nom">
+      <pattern>
+	<pattern-item n="det_nom"/>
+      </pattern>
+      <action>
+	    <out>
+	      <lu>
+		<clip pos="2" part="whole"/>
+	      </lu> 
+	      <b pos="1"/>
+	      <lu>
+		<clip pos="1" part="whole"/>
+	      </lu>
+<!--
+	      <b pos="2"/>
+	      <lu>
+		<clip pos="4" part="whole"/>
+	      </lu>
+	      <b pos="3"/>
+	      <lu>
+		<clip pos="2" part="whole"/>
+	      </lu>
+-->
 	    </out>
       </action>
     </rule> 

@@ -11,6 +11,7 @@
 	<sdefs>
 		<sdef n="det" />
 		<sdef n="ind" />
+		<sdef n="itg" />
 		<sdef n="mf" /> 
 		<sdef n="m" /> 
 		<sdef n="f" /> 
@@ -113,6 +114,7 @@
 
 
 <e>       <p><l>घर<s n="n"/></l>   <r>house<s n="n"/></r></p></e>
+<e>	  <p><l>बिद्यार्थी<s n="n"/></l>	<r>student<s n="n"/></r></p></e>
 <e>       <p><l>कम्प्युटर<s n="n"/></l>            <r>computer<s n="n"/></r></p></e>
 <e>       <p><l>चरो<s n="n"/></l>                  <r>bird<s n="n"/></r></p></e>
 <e>       <p><l>ब्वाँसो<s n="n"/></l><r>wolf<s n="n"/></r></p></e>
@@ -215,19 +217,34 @@
 <e>       <p><l>अध्यक्ष<s n="n"/></l>              <r>chairman<s n="n"/></r></p></e>
 <e>       <p><l>क्लर्क<s n="n"/></l>               <r>clerk<s n="n"/></r></p></e>
 <e>       <p><l>ग्राहक<s n="n"/></l>               <r>client<s n="n"/></r></p></e>
-<e>       <p><l>साथी<s n="n"/></l>                 <r>colleague<s n="n"/></r></p></e>
-<e>       <p><l>कम्युनिष्ट<s n="n"/></l>           <r>communist<s n="n"/></r></p></e>
-<e>       <p><l>रचनाकार<s n="n"/></l>              <r>composer<s n="n"/></r></p></e>
-<e>       <p><l>कमरेड<s n="n"/></l>                <r>comrade<s n="n"/></r></p></e>
-<e>       <p><l>चालक<s n="n"/></l>                 <r>conductor<s n="n"/></r></p></e>
+<e>       <p><l>साथी<s n="n"/></l>               <r>colleague<s n="n"/></r></p></e>
+<e>       <p><l>कम्युनिष्ट<s n="n"/></l>            <r>communist<s n="n"/></r></p></e>
+<e>       <p><l>रचनाकार<s n="n"/></l>            <r>composer<s n="n"/></r></p></e>
+<e>       <p><l>कमरेड<s n="n"/></l>              <r>comrade<s n="n"/></r></p></e>
+<e>       <p><l>चालक<s n="n"/></l>              <r>conductor<s n="n"/></r></p></e>
 <e>       <p><l>परामर्शदाता<s n="n"/></l>          <r>consultant<s n="n"/></r></p></e>
-<e>       <p><l>उपभोक्ता<s n="n"/></l>             <r>consumer<s n="n"/></r></p></e>
-<e> 	  <p><l>व्यक्ति<s n="n"/></l> 			<r>person<s n="n"/></r></p></e>
-<e> 	  <p><l>मानिस<s n="n"/></l> 			<r>man<s n="n"/></r></p></e>
-<e> 	  <p><l>भात<s n="n"/></l> 	<r>rice<s n="n"/></r></p></e>
+<e>       <p><l>उपभोक्ता<s n="n"/></l>            <r>consumer<s n="n"/></r></p></e>
+<e> 	  <p><l>व्यक्ति<s n="n"/></l> 		<r>person<s n="n"/></r></p></e>
+<e> 	  <p><l>मानिस<s n="n"/></l> 		<r>man<s n="n"/></r></p></e>
+<e> 	  <p><l>भात<s n="n"/></l> 		<r>rice<s n="n"/></r></p></e>
+<e>	  <p><l>नाम<s n="n"/></l>		<r>name<s n="n"/></r></p></e>
 
-<e> 	  <p><l>एउटा<s n="det"/></l> 	<r>a<s n="det"/><s n="ind"/></r></p></e>
-    
+<e> 	  <p><l>एउटा<s n="det"/></l> 		<r>a<s n="det"/><s n="ind"/></r></p></e>
+<e> 	  <p><l>मेरो<s n="det"/></l> 		<r>my<s n="det"/></r></p></e>
+<e> 	  <p><l>हाम्रो<s n="det"/></l> 		<r>our<s n="det"/></r></p></e>
+<e> 	  <p><l>तिम्रो<s n="det"/></l> 		<r>your<s n="det"/></r></p></e>
+<e> 	  <p><l>उसको<s n="det"/></l> 		<r>his<s n="det"/></r></p></e>
+<e> 	  <p><l>उनको<s n="det"/></l> 		<r>her<s n="det"/></r></p></e>
+<e> 	  <p><l>तिनीहरुको<s n="det"/></l> 	<r>their<s n="det"/></r></p></e>
+
+<!-- Interrogation -->
+<e> 	  <p><l>के<s n="prn"/><s n="itg"/></l> 	<r>what<s n="prn"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कुन<s n="prn"/><s n="itg"/></l> 	<r>which<s n="prn"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कहाँ<s n="prn"/><s n="itg"/></l> 	<r>where<s n="prn"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>को<s n="prn"/><s n="itg"/></l> 	<r>who<s n="prn"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>किन<s n="prn"/><s n="itg"/></l> 	<r>why<s n="prn"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कसरी<s n="prn"/><s n="itg"/></l> 	<r>how<s n="prn"/><s n="itg"/></r></p></e>
+
     
 <e>       <p><l>मा<s n="post"/></l>             <r>on<s n="pr"/></r></p></e>
 <e>       <p><l>मा<s n="post"/></l>             <r>in<s n="pr"/></r></p></e>

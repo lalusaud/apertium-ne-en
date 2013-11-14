@@ -16,6 +16,7 @@
 	<sdefs>
 		<sdef n="det" />
 		<sdef n="ind" />
+		<sdef n="itg" />
 		<sdef n="prn" /> 
 		<sdef n="pri" /> 
 		<sdef n="mf" /> 
@@ -38,7 +39,8 @@
 		<sdef n="vblex" 	c="verb"/> 
 		<sdef n="vbser"		c="Verb 'to be'"/>
 		<sdef n="pres"/> 
-		<sdef n="pp"/> 
+		<sdef n="pp"/>
+		<sdef n="pos"/>
 		<sdef n="past"/> 
 		<sdef n="adj" 	c="Adjective"/> 
 		<sdef n="sint" 	c="Adjective"/> 
@@ -95,6 +97,11 @@
 <e>       <re>[.\?;:!]</re><p><l></l>                  <r><s n="sent"/></r></p></e>
 </pardef>
 
+<!-- Interrogation -->
+<pardef n="के__prn">
+<e>       <p><l></l>                                   <r><s n="prn"/><s n="itg"/><s n="sp"/></r></p></e>
+</pardef>
+
     <!-- Numerals -->
 
 <pardef n="numeros">
@@ -115,7 +122,7 @@
 <e>       <p><l>ो</l>                                  <r>ो<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
 <e>       <p><l>ी</l>                                  <r>ो<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
 <e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="pl"/></r></p></e>
-<e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="sint"/><s n="pl"/></r></p></e>
+<!-- <e>       <p><l>ा</l>                                  <r>ो<s n="adj"/><s n="f"/><s n="pl"/></r></p></e> -->
 <e>       <p><l>ी</l>                                  <r>ो<s n="adj"/><s n="sp"/></r></p></e>
 <e r="RL"><p><l>ो</l>                                  <r>ो<s n="adj"/></r></p></e>
 <e>	  <p><l>ो</l>					<r>ो<s n="adj"/><s n="sint"/></r></p></e>
@@ -354,6 +361,10 @@
 	<e> <p><l></l> <r><s n="det"/><s n="sg"/></r> </p> </e>
 </pardef>
 
+<pardef n="उनको__det">
+	<e><p><l></l>                                   <r><s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+</pardef>
+
 <pardef n="धेरै__preadv">
 	<e><p><l></l> <r><s n="preadv"/></r></p></e>
 </pardef>
@@ -404,6 +415,14 @@
 <e lm="दस"><i>दस</i><par n="two__num"/></e>
 
 <e lm="एउटा"><i>एउटा</i><par n="एउटा__det"/></e>
+<e lm="मेरो"><i>मेरो</i><par n="उनको__det"/></e>
+<e lm="हाम्रो"><i>हाम्रो</i><par n="उनको__det"/></e>
+<e lm="तिम्रो"><i>तिम्रो</i><par n="उनको__det"/></e>
+<e lm="उसको"><i>उसको</i><par n="उनको__det"/></e>
+<e lm="उनको"><i>उनको</i><par n="उनको__det"/></e>
+<e lm="उनीहरुको"><i>उनीहरुको</i><par n="उनको__det"/></e>
+
+
 
 
     <!-- Proper nouns -->
@@ -539,6 +558,7 @@
 <e lm="व्यक्ति"><i>व्यक्ति</i><par n="घर__n"/></e>
 <e lm="भात"><i>भात</i><par n="घर__n"/></e>
 <e lm="बिद्यार्थी"><i>बिद्यार्थी</i><par n="घर__n"/></e>
+<e lm="नाम"><i>नाम</i><par n="घर__n"/></e>
 
 
     <!-- Adjectives -->
@@ -638,6 +658,14 @@
 <e lm="बाँड"><i>पछार</i><par n="गर__v"/></e>
 
 <e lm="हु"><par n="हु__v"/></e>
+
+<!-- what, which, where, who, why, how -->
+<e lm="के"><i>के</i><par n="के__det"/></e>
+<e lm="कुन"><i>कुन</i><par n="के__det"/></e>
+<e lm="कहाँ"><i>कहाँ</i><par n="के__det"/></e>
+<e lm="को"><i>को</i><par n="के__det"/></e>
+<e lm="किन"><i>किन</i><par n="के__det"/></e>
+<e lm="कसरी"><i>कसरी</i><par n="के__det"/></e>
 
 
 <!-- Preadverbs -->

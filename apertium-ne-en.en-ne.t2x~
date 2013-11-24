@@ -64,11 +64,19 @@
       <attr-item tags="subs"/>
       <attr-item tags="ant"/>
     </def-attr>
+    <def-attr n="a_verb">
+      <attr-item tags="vbser"/>
+      <attr-item tags="vblex"/>	  
+      <attr-item tags="vblex.pron"/>
+      <attr-item tags="vbhaver"/>
+      <attr-item tags="vbmod"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
     <def-var n="nombre"/>
     <def-var n="genere"/>
+    <def-var n="vibhakti_chunk"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -97,6 +105,10 @@
 					<equal caseless="yes">
 						<clip pos="1" part="lem"/>
 						<lit v="nom"/>
+					</equal>
+					<equal caseless="yes">
+						<clip pos="1" part="lem"/>
+						<lit v="det_nom"/>
 					</equal>
 	      			</or>
 	    		</test>	    
@@ -128,6 +140,29 @@
 					</let>
 				</otherwise>
 	    		</choose>
+			<choose>
+				<when>
+					<test>
+						<equal>
+							<clip pos="2" part="a_verb"/>
+							<lit-tag v="vbhaver"/>
+						</equal>
+					</test>
+					<let>
+						<var n="vibhakti_chunk"/>
+						<concat>
+							<lit v="vibhakti{^संग"/>
+							<clip pos="1" side="tl" part="lemh"/>
+							<lit-tag v="vbser"/>
+							<lit-tag v="2"/>
+							<lit-tag v="3"/>
+							<lit-tag v="4"/>
+							<lit-tag v="5"/>
+							<clip pos="1" side="tl" part="lemq"/>
+						</concat>
+					</let>
+				</when>
+			</choose>
 	       		<choose>
 	   			<when>
 					<test>
@@ -287,6 +322,14 @@
 	</call-macro>
 	<out>
 		<chunk>
+			<clip pos="3" part="whole"/>
+		</chunk>
+		<b/>
+		<chunk>
+			<clip pos="4" part="whole"/>
+		</chunk>
+		<b/>
+		<chunk>
 			<clip pos="1" part="whole"/>
 		</chunk>
 		<b/>
@@ -347,7 +390,9 @@
         		<chunk>
 				<clip pos="1" part="whole"/>
 			</chunk>
-
+			<chunk>
+				<var n="vibhakti_chunk"/>
+			</chunk>
 			<b pos="1"/>
 			
 			<chunk>
@@ -378,6 +423,10 @@
         <out>
           <chunk>
             <clip pos="1" part="whole"/>
+          </chunk>
+          <chunk>
+		<var n="vibhakti_chunk"/>
+		<lit-tag v="vibhakti"/>
           </chunk>
 	  <b pos="1"/>
           <chunk>

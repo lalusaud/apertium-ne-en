@@ -5036,6 +5036,7 @@ zig-zag__vblex
 <e lm="boxing"><i>boxing</i><par n="east__n"/></e>
 <e lm="boy"><i>boy</i><par n="house__n"/></e>
 <e lm="brother"><i>br</i><par n="br/other__n"/></e>
+<e lm="elder brother"><i>elder<b/>br</i><par n="br/other__n"/></e>
 <e lm="bring together"><i>br</i><par n="br/ing__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>together</l><r><g><b/>together</g></r></p></e>
 <e lm="break"><i>br</i><par n="br/eak__vblex"/></e>
 <e lm="bring"><i>br</i><par n="br/ing__vblex"/></e>
@@ -7073,7 +7074,7 @@ zig-zag__vblex
 <e lm="hang"><i>h</i><par n="h/ang__vblex"/></e>
 <e lm="have got"><i>ha</i><par n="ha/ve__vblex"/><p><l><b/>got</l><r><g><b/>got</g></r></p></e>
 <e lm="have"><i>ha</i><par n="ha/ve__vbhaver"/></e>
-<e lm="have"><i>ha</i><par n="ha/ve__vblex"/></e>
+<!-- <e lm="have"><i>ha</i><par n="ha/ve__vblex"/></e> -->
 <e lm="habit"><i>habit</i><par n="house__n"/></e>
 <e lm="habitat"><i>habitat</i><par n="house__n"/></e>
 <e lm="hair"><i>hair</i><par n="house__n"/></e>
@@ -11082,10 +11083,10 @@ zig-zag__vblex
 <e lm="whistle"><i>whistle</i><par n="house__n"/></e>
 <e lm="white"><i>white</i><par n="house__n"/></e>
 <e lm="white"><i>white</i><par n="nice/__adj"/></e>
-<e lm="who"><i>who</i><par n="what__prn"/></e>
-<e lm="where"><i>where</i><par n="what__prn"/></e>
-<e lm="why"><i>why</i><par n="what__prn"/></e>
-<e lm="how"><i>how</i><par n="what__prn"/></e>
+<e lm="who"><i>who</i><par n="what__det"/></e>
+<e lm="where"><i>where</i><par n="what__det"/></e>
+<e lm="why"><i>why</i><par n="what__det"/></e>
+<e lm="how"><i>how</i><par n="what__det"/></e>
     <!--
     <e lm="who"><i>who</i><par n="that__rel"/></e>
     -->
@@ -11196,6 +11197,7 @@ zig-zag__vblex
 <e lm="Gita"><i>Gita</i><par n="Mary__np"/></e>
 <e lm="Laxmi"><i>Laxmi</i><par n="Mary__np"/></e>
 <e lm="Tara"><i>Tara</i><par n="Mary__np"/></e>
+<e lm="Deepak"><i>Deepak</i><par n="Mark__np"/></e>
 
     <!-- Antonyms -->
 <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>

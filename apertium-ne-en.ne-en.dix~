@@ -24,7 +24,8 @@
 		<sdef n="prn" 	c="Pronoun"/> 
 		<sdef n="np" 	c="Propernoun"/> 
 		<sdef n="vblex" 	c="verb"/> 
-		<sdef n="vbser" 	c="verb"/> 
+		<sdef n="vbser" 	c="verb"/>
+		<sdef n="vbhaver" 	c="verb have"/>  
 		<sdef n="adj" 	c="Adjective"/> 
 		<sdef n="cnjcoo" 	c="Co-ordinating conjunction"/> 
 		<sdef n="m" 	c="masculine"/> 
@@ -156,6 +157,7 @@
 <e> <p><l>राम<s n="np"/></l> <r>Ram<s n="np"/></r></p> </e>
 <e> <p><l>श्याम<s n="np"/></l> <r>Shyam<s n="np"/></r></p> </e>
 <e> <p><l>नबराज<s n="np"/></l> <r>Nabraj<s n="np"/></r></p> </e>
+<e> <p><l>दिपक<s n="np"/></l> <r>Deepak<s n="np"/></r></p> </e>
 <e> <p><l>सीता<s n="np"/></l> <r>Sita<s n="np"/></r></p> </e>
 <e> <p><l>गीता<s n="np"/></l> <r>Gita<s n="np"/></r></p> </e>
 <e> <p><l>लक्ष्मी<s n="np"/></l> <r>Laxmi<s n="np"/></r></p> </e>
@@ -209,8 +211,9 @@
 <e>       <p><l>न्यायधीवक्ता<s n="n"/></l>         <r>attorney<s n="n"/></r></p></e>
 <e>       <p><l>लेखा परीक्षक<s n="n"/></l>         <r>auditor<s n="n"/></r></p></e>
 <e>       <p><l>जीब वैज्ञानिक<s n="n"/></l>        <r>biologist<s n="n"/></r></p></e>
-<e>       <p><l>हाकिम<s n="n"/></l>                <r>boss<s n="n"/></r></p></e>
-<e>       <p><l>भाइ<s n="n"/></l>                  <r>brother<s n="n"/></r></p></e>
+<e>       <p><l>हाकिम<s n="n"/></l>              <r>boss<s n="n"/></r></p></e>
+<e>       <p><l>भाइ<s n="n"/><s n="m"/></l>      <r>brother<s n="n"/></r></p></e>
+<e>       <p><l>दाइ<s n="n"/><s n="m"/></l>      <r>elder<b/>brother<s n="n"/></r></p></e>
 <e>       <p><l>उमेद्वार<s n="n"/></l>             <r>candidate<s n="n"/></r></p></e>
 <e>       <p><l>क्याप्टेन<s n="n"/></l>            <r>captain<s n="n"/></r></p></e>
 <e>       <p><l>बिरालो<s n="n"/></l>               <r>cat<s n="n"/></r></p></e>
@@ -238,12 +241,12 @@
 <e> 	  <p><l>तिनीहरुको<s n="det"/></l> 	<r>their<s n="det"/></r></p></e>
 
 <!-- Interrogation -->
-<e> 	  <p><l>के<s n="prn"/><s n="itg"/></l> 	<r>what<s n="prn"/><s n="itg"/></r></p></e>
-<e> 	  <p><l>कुन<s n="prn"/><s n="itg"/></l> 	<r>which<s n="prn"/><s n="itg"/></r></p></e>
-<e> 	  <p><l>कहाँ<s n="prn"/><s n="itg"/></l> 	<r>where<s n="prn"/><s n="itg"/></r></p></e>
-<e> 	  <p><l>को<s n="prn"/><s n="itg"/></l> 	<r>who<s n="prn"/><s n="itg"/></r></p></e>
-<e> 	  <p><l>किन<s n="prn"/><s n="itg"/></l> 	<r>why<s n="prn"/><s n="itg"/></r></p></e>
-<e> 	  <p><l>कसरी<s n="prn"/><s n="itg"/></l> 	<r>how<s n="prn"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>के<s n="det"/><s n="itg"/></l> 		<r>what<s n="det"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कुन<s n="det"/><s n="itg"/></l> 	<r>which<s n="det"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कहाँ<s n="det"/><s n="itg"/></l> 	<r>where<s n="det"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>को<s n="det"/><s n="itg"/></l> 	<r>who<s n="det"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>किन<s n="det"/><s n="itg"/></l> 	<r>why<s n="det"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कसरी<s n="det"/><s n="itg"/></l> 	<r>how<s n="det"/><s n="itg"/></r></p></e>
 
     
 <e>       <p><l>मा<s n="post"/></l>             <r>on<s n="pr"/></r></p></e>
@@ -264,7 +267,7 @@
 
 
 <e>       <p><l>दुख दि<s n="vblex"/></l>               <r>harass<s n="vblex"/></r></p></e>
-<e>       <p><l>गर<s n="vblex"/></l>                   <r>do<s n="vblex"/></r></p></e>
+<e>       <p><l>गर्<s n="vblex"/></l>                   <r>do<s n="vblex"/></r></p></e>
 <e>       <p><l>भन<s n="vblex"/></l>                   <r>say<s n="vblex"/></r></p></e>
 <e>       <p><l>खा<s n="vblex"/></l>                   <r>eat<s n="vblex"/></r></p></e>
 <e>       <p><l>सुत<s n="vblex"/></l>                  <r>sleep<s n="vblex"/></r></p></e>
@@ -293,6 +296,7 @@
 <e>       <p><l>पछार<s n="vblex"/></l>                 <r>win<s n="vblex"/></r></p></e>
 <e>       <p><l>लछार<s n="vblex"/></l>                 <r>draw<s n="vblex"/></r></p></e>
 <e>       <p><l>बटार<s n="vblex"/></l>                 <r>bent<s n="vblex"/></r></p></e>
+<e>	  <p><l>छ<s n="vbhaver"/></l>		     <r>have<s n="vbhaver"/></r></p></e>
 	
 <!-- Preadverbs -->
 <e> 	 <p><l>धेरै<s n="preadv"/></l> 				  <r>very<s n="preadv"/></r></p></e>

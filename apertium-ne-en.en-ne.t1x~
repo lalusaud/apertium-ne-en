@@ -66,6 +66,7 @@
       <cat-item tags="vblex.sep.pri.*"/>
 
       <cat-item tags="vbhaver.pres"/>
+      <cat-item tags="vbhaver.pres.*"/>
       <cat-item tags="vbhaver.past"/>
       <cat-item tags="vbhaver.pri.*"/>
       <cat-item lemma="can" tags="vaux.*"/>      
@@ -483,10 +484,6 @@
       </action>
     </rule>
 
-
-
-
-
     <rule comment="REGLA: ARTICLE ADJ NOM">
       <pattern>
         <pattern-item n="article"/>
@@ -756,49 +753,58 @@
         <pattern-item n="verbcj"/>
       </pattern>
       <action>
-              <choose>
+	  <let>
+		   <var n="lema_SV"/>
+		   <lit v="verbcj"/>
+	  </let>
+          <choose>
 		<when>
 		    <test>
+			<and>
 			    <equal>
 				<clip pos="1" side="sl" part="temps"/>
 				<lit-tag v="pres"/>
 			    </equal>
+			    <equal>
+				<clip pos="1" side="sl" part="a_verb"/>
+				<lit-tag v="vblex"/>
+			    </equal>
+			</and>			
 		    </test>
-    		<let>
+    		    <let>
     			<clip pos="1" side="tl" part="temps"/>
     			<lit-tag v="pri"/>
-    		</let>
-		    <let>
-		    	<var n="lema_SV"/>
-		    	<lit v="verbcj"/>
-		    </let>
-		    <let>
-		    	<var n="temps_chunk"/>
-		    	<clip pos="1" side="tl" part="temps"/>
-		    </let>
+    		    </let>
 		    <let>
 			<var n="pers_chunk"/>
 			<lit-tag v="PD"/>
 		    </let>
 		    <let>
-			<var n="nbr_chunk"/>
-			<lit-tag v="ND"/>
+			<var n="gen_chunk"/>
+			<lit-tag v="GD"/>
 		    </let>
-		    <let>
+		</when>
+           </choose>
+	   <let>
+		    	<var n="temps_chunk"/>
+		    	<clip pos="1" side="tl" part="temps"/>
+	   </let>
+	   <let>
+		<var n="nbr_chunk"/>
+		<lit-tag v="ND"/>
+	   </let>
+	   <let>
 			<var n="verbfinal"/>
 			<concat>
 			  <clip pos="1" side="tl" part="lemh"/>
-			  <clip pos="1" side="tl" part="a_verb"/>
+			  <lit-tag v="2"/>
 			  <lit-tag v="3"/>
 			  <lit-tag v="4"/>
 			  <lit-tag v="5"/>
 			  <lit-tag v="6"/>
 			  <clip pos="1" side="tl" part="lemq"/>
 			</concat>
-		    </let>
-		</when>
-              </choose>
-
+	   </let>
         <out>
           <chunk namefrom="lema_SV" case="caseFirstWord">
             <tags>
@@ -806,7 +812,7 @@
               <tag><clip pos="1" side="tl" part="a_verb"/></tag>
 	      <tag><var n="temps_chunk"/></tag>
 	      <tag><var n="pers_chunk"/></tag>
-	      <tag><lit-tag v="GD"/></tag>
+	      <tag><var n="gen_chunk"/></tag>
 	      <tag><var n="nbr_chunk"/></tag>
               <!-- <tag><clip pos="1" side="tl" part="a_tns"/></tag> -->
             </tags>
@@ -818,8 +824,28 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: GER">
+	<pattern>
+	   <pattern-item n="ger"/>
+	</pattern>
+	<action>
+	    <out>
+		<chunk name="ger" case="caseFirstWord">
+		    <tags>
+			<tag><lit-tag v="SV"/></tag>
+			<tag><var n="temps_chunk"/></tag>
+			<tag><lit-tag v="ger"/></tag>
+			<tag><var n="pers_chunk"/></tag>
+		    </tags>
+		    <lu>
+			<clip pos="1" side="tl" part="whole"/>
+		    </lu>
+		</chunk>
+	     </out>
+	</action>
+    </rule>
 
-    <rule comment="REGLA: BE GER (am saying -> estic dient)">
+    <rule comment="REGLA: BE GER (am saying -> भन्दैछु)">
       <pattern>
         <pattern-item n="be"/>
         <pattern-item n="ger"/>
@@ -974,7 +1000,7 @@
 	      <tag><clip pos="1" side="tl" part="nbr"/></tag>
 	    </tags>
 	    <lu>
-	      <clip pos="1" side="tl" part="lem"/> 
+	      <clip pos="1" side="tl" part="whole"/> 
 	    </lu>	
 	  </chunk>
 	</out>

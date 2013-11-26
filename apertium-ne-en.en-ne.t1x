@@ -26,6 +26,11 @@
       <cat-item tags="rel.aa.*"/>
     </def-cat>
 
+    <def-cat n="vbdo">
+      <cat-item tags="vbdo"/>
+      <cat-item tags="vbdo.*"/>
+    </def-cat>
+
     <def-cat n="on">
       <cat-item lemma="on" tags="pr"/>
     </def-cat>
@@ -989,6 +994,27 @@
     <rule comment="REGLA: DETERMINANT ">          
       <pattern>
 	<pattern-item n="det"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="det" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="DET"/></tag>
+	      <tag><clip pos="1" side="tl" part="gen"/></tag>
+	      <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	    </tags>
+	    <lu>
+	      <clip pos="1" side="tl" part="whole"/> 
+	    </lu>	
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: DET VBDO ('When do' you play?) ">          
+      <pattern>
+	<pattern-item n="det"/>
+	<pattern-item n="vbdo"/>
       </pattern>
       <action>
 	<out>

@@ -26,6 +26,11 @@
       <cat-item tags="rel.aa.*"/>
     </def-cat>
 
+    <def-cat n="vbdo">
+      <cat-item tags="vbdo"/>
+      <cat-item tags="vbdo.*"/>
+    </def-cat>
+
     <def-cat n="on">
       <cat-item lemma="on" tags="pr"/>
     </def-cat>
@@ -835,7 +840,6 @@
 			<tag><lit-tag v="SV"/></tag>
 			<tag><var n="temps_chunk"/></tag>
 			<tag><lit-tag v="ger"/></tag>
-			<tag><var n="pers_chunk"/></tag>
 		    </tags>
 		    <lu>
 			<clip pos="1" side="tl" part="whole"/>
@@ -1001,6 +1005,25 @@
 	    </tags>
 	    <lu>
 	      <clip pos="1" side="tl" part="whole"/> 
+	    </lu>	
+	  </chunk>
+	</out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: DET VBDO ('When do' you play?) ">          
+      <pattern>
+	<pattern-item n="det"/>
+	<pattern-item n="vbdo"/>
+      </pattern>
+      <action>
+	<out>
+	  <chunk name="vbdo" case="caseFirstWord">
+	    <tags>
+	      <tag><lit-tag v="vbdo"/></tag>
+	    </tags>
+	    <lu>
+	      <clip pos="1" side="tl" part="whole"/>
 	    </lu>	
 	  </chunk>
 	</out>

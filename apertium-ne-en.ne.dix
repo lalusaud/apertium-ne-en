@@ -235,9 +235,22 @@
 <e>       <p><l>न्छु</l>                                 <r><s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
 <e>       <p><l>न्छौं</l>                                  <r><s n="vblex"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
 <e>       <p><l>न्छौ</l>                                <r><s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+<e>       <p><l>छौ</l>                                <r><s n="vblex"/><s n="pri"/><s n="p2"/><s n="sp"/></r></p></e>
 <e>       <p><l>न्छ</l>                               <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 <e>       <p><l>न्छिन</l>                               <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e>       <p><l>न्छन</l>                              <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
+<e>       <p><l>दै</l>                              <r><s n="vblex"/><s n="ger"/></r></p></e>
+</pardef>
+
+<pardef n="खेल्/नु__v">
+<e>       <p><l>नु</l>                                 <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+<e>       <p><l>छु</l>                                 <r><s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+<e>       <p><l>छौं</l>                                  <r><s n="vblex"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+<e>       <p><l>छौ</l>                                <r><s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+<e>       <p><l>छौ</l>                                <r><s n="vblex"/><s n="pri"/><s n="p2"/><s n="sp"/></r></p></e>
+<e>       <p><l>छ</l>                               <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e>       <p><l>छिन</l>                               <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e>       <p><l>छन</l>                              <r><s n="vblex"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
 <e>       <p><l>दै</l>                              <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
@@ -568,6 +581,8 @@
 <e lm="भात"><i>भात</i><par n="घर__n"/></e>
 <e lm="बिद्यार्थी"><i>बिद्यार्थी</i><par n="घर__n"/></e>
 <e lm="नाम"><i>नाम</i><par n="घर__n"/></e>
+<e lm="फुटबल"><i>फुटबल</i><par n="घर__n"/></e>
+<e lm="टेनिस"><i>टेनिस</i><par n="घर__n"/></e>
 
 
     <!-- Adjectives -->
@@ -640,9 +655,11 @@
 
 <e lm="दुख दि"><i>दुख दि</i><par n="खा__v"/></e>
 <e lm="गर्"><i>गर्</i><par n="खा/नु__v"/></e>
+<e lm="खेल्नु"><i>खेल्</i><par n="खेल्/नु__v"/></e>
+<e lm="बस्नु"><i>बस्</i><par n="खेल्/नु__v"/></e>
 <e lm="भन"><i>भन</i><par n="गर__v"/></e>
 <e lm="खानु"><i>खा</i><par n="खा/नु__v"/></e>
-<e lm="सुत"><i>सुत</i><par n="गर__v"/></e>
+<e lm="सुत्नु"><i>सुत्</i><par n="खा/नु__v"/></e>
 <e lm="हिँड"><i>हिँड</i><par n="गर__v"/></e>
 <e lm="उठ"><i>उठ</i><par n="गर__v"/></e>
 <e lm="बस"><i>बस</i><par n="गर__v"/></e>
@@ -680,6 +697,7 @@
 <e lm="को"><i>को</i><par n="के__det"/></e>
 <e lm="किन"><i>किन</i><par n="के__det"/></e>
 <e lm="कसरी"><i>कसरी</i><par n="के__det"/></e>
+<e lm="कहिले"><i>कहिले</i><par n="के__det"/></e>
 
 
 <!-- Preadverbs -->

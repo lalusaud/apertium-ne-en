@@ -232,6 +232,8 @@
 <e> 	  <p><l>मानिस<s n="n"/></l> 		<r>man<s n="n"/></r></p></e>
 <e> 	  <p><l>भात<s n="n"/></l> 		<r>rice<s n="n"/></r></p></e>
 <e>	  <p><l>नाम<s n="n"/></l>		<r>name<s n="n"/></r></p></e>
+<e>	  <p><l>फुटबल<s n="n"/></l>		<r>football<s n="n"/></r></p></e>
+<e>	  <p><l>टेनिस<s n="n"/></l>		<r>tennis<s n="n"/></r></p></e>
 
 <e> 	  <p><l>एउटा<s n="det"/></l> 		<r>a<s n="det"/><s n="ind"/></r></p></e>
 <e> 	  <p><l>मेरो<s n="det"/></l> 		<r>my<s n="det"/></r></p></e>
@@ -248,6 +250,7 @@
 <e> 	  <p><l>को<s n="det"/><s n="itg"/></l> 	<r>who<s n="det"/><s n="itg"/></r></p></e>
 <e> 	  <p><l>किन<s n="det"/><s n="itg"/></l> 	<r>why<s n="det"/><s n="itg"/></r></p></e>
 <e> 	  <p><l>कसरी<s n="det"/><s n="itg"/></l> 	<r>how<s n="det"/><s n="itg"/></r></p></e>
+<e> 	  <p><l>कहिले<s n="det"/><s n="itg"/></l> 	<r>when<s n="det"/><s n="itg"/></r></p></e>
 
     
 <e>       <p><l>मा<s n="post"/></l>             <r>on<s n="pr"/></r></p></e>
@@ -271,6 +274,8 @@
 <e>       <p><l>गर्<s n="vblex"/></l>                   <r>do<s n="vblex"/></r></p></e>
 <e>       <p><l>भन<s n="vblex"/></l>                   <r>say<s n="vblex"/></r></p></e>
 <e>       <p><l>खा<s n="vblex"/></l>                   <r>eat<s n="vblex"/></r></p></e>
+<e>       <p><l>खेल्<s n="vblex"/></l>                   <r>play<s n="vblex"/></r></p></e>
+<e>       <p><l>बस्<s n="vblex"/></l>                   <r>live<s n="vblex"/></r></p></e>
 <e>       <p><l>सुत<s n="vblex"/></l>                  <r>sleep<s n="vblex"/></r></p></e>
 <e>       <p><l>डुल<s n="vblex"/></l>                  <r>walk<s n="vblex"/></r></p></e>
 <e>       <p><l>उठ<s n="vblex"/></l>                   <r>awake<s n="vblex"/></r></p></e>

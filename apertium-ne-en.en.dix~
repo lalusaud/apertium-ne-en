@@ -5037,6 +5037,7 @@ zig-zag__vblex
 <e lm="boy"><i>boy</i><par n="house__n"/></e>
 <e lm="brother"><i>br</i><par n="br/other__n"/></e>
 <e lm="elder brother"><i>elder<b/>br</i><par n="br/other__n"/></e>
+<e lm="younger brother"><i>younger<b/>br</i><par n="br/other__n"/></e>
 <e lm="bring together"><i>br</i><par n="br/ing__vblex__sep"/><par n="probj_dem__prn"/><p><l><b/>together</l><r><g><b/>together</g></r></p></e>
 <e lm="break"><i>br</i><par n="br/eak__vblex"/></e>
 <e lm="bring"><i>br</i><par n="br/ing__vblex"/></e>

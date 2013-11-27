@@ -1,10 +1,14 @@
-# Nepali and English Language Translation System
+** Apertium based Nepali and English Language Translation System **
+
+More details can be found at [Apertium Website][1]
 
 Some test sentences:
 
-The cat and the dog are friends.
-Cat sees in Kathmandu's direction.
-Cat saw in the dog's direction. 
-two cats and the dog saw the friends.
+- Ram is a boy.
+- They are very good boys.
+- I am eating rice.
+- He has a pen.
+- What is your name?
+- The cat and the dog are friends.
 
-
+[1]: http://www.apertium.org

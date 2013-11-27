@@ -153,37 +153,43 @@
 
 <e>       <p><l>हु<s n="vblex"/></l> <r>be<s n="vbser"/></r></p></e>
 
-<!-- Nepali Names -->
-<e> <p><l>राम<s n="np"/></l> <r>Ram<s n="np"/></r></p> </e>
-<e> <p><l>श्याम<s n="np"/></l> <r>Shyam<s n="np"/></r></p> </e>
-<e> <p><l>नबराज<s n="np"/></l> <r>Nabraj<s n="np"/></r></p> </e>
-<e> <p><l>दिपक<s n="np"/></l> <r>Deepak<s n="np"/></r></p> </e>
-<e> <p><l>सीता<s n="np"/></l> <r>Sita<s n="np"/></r></p> </e>
-<e> <p><l>गीता<s n="np"/></l> <r>Gita<s n="np"/></r></p> </e>
-<e> <p><l>लक्ष्मी<s n="np"/></l> <r>Laxmi<s n="np"/></r></p> </e>
-<e> <p><l>तारा<s n="np"/></l> <r>Tara<s n="np"/></r></p> </e>
+<!-- Name of people : male -->
+<e> <p><l>राम<s n="np"/></l> 	<r>Ram<s n="np"/></r></p> </e>
+<e> <p><l>श्याम<s n="np"/></l> 	<r>Shyam<s n="np"/></r></p> </e>
+<e> <p><l>हरि<s n="np"/></l>	<r>Hari<s n="np"/></r></p></e>
+<e> <p><l>सुनिल<s n="np"/></l>	<r>Sunil<s n="np"/></r></p></e>
+<e> <p><l>नबराज<s n="np"/></l> 	<r>Nabraj<s n="np"/></r></p> </e>
+<e> <p><l>दिपक<s n="np"/></l> 	<r>Deepak<s n="np"/></r></p> </e>
+<e> <p><l>सुरेन्द्र<s n="np"/></l> 	<r>Surendra<s n="np"/></r></p> </e>
+<e> <p><l>रमेश<s n="np"/></l> 	<r>Ramesh<s n="np"/></r></p> </e>
+<e> <p><l>दिपेश<s n="np"/></l> 	<r>Dipesh<s n="np"/></r></p> </e>
+<e> <p><l>सुरेश<s n="np"/></l> 	<r>Suresh<s n="np"/></r></p> </e>
+<e> <p><l>गोविन्द<s n="np"/></l>  <r>Govind<s n="np"/></r></p></e>
+<e> <p><l>अशोक<s n="np"/></l>	<r>Ashok<s n="np"/></r></p></e>
+<e> <p><l>गोपाल<s n="np"/></l>	<r>Gopal<s n="np"/></r></p></e>
+<e> <p><l>हेमराज<s n="np"/></l>	<r>Hemaraj<s n="np"/></r></p></e>
+<e> <p><l>योगराज<s n="np"/></l>  <r>Yogaraj<s n="np"/></r></p></e>
 
+<!-- Name of people : female -->
+<e> <p><l>सीता<s n="np"/></l> 	<r>Sita<s n="np"/></r></p> </e>
+<e> <p><l>गीता<s n="np"/></l> 	<r>Gita<s n="np"/></r></p> </e>
+<e> <p><l>लक्ष्मी<s n="np"/></l>	<r>Laxmi<s n="np"/></r></p> </e>
+<e> <p><l>तारा<s n="np"/></l> 	<r>Tara<s n="np"/></r></p> </e>
+<e> <p><l>माया<s n="np"/></l> 	<r>Maya<s n="np"/></r></p> </e>
+<e> <p><l>रेनु<s n="np"/></l> 	<r>Renu<s n="np"/></r></p> </e>
+<e> <p><l>राधा<s n="np"/></l> 	<r>Radha<s n="np"/></r></p> </e>
+<e> <p><l>सरस्वती<s n="np"/></l> <r>Saraswati<s n="np"/></r></p> </e>
+<e> <p><l>रीता<s n="np"/></l>    <r>Rita<s n="np"/></r></p></e>
+<e> <p><l>कमला<s n="np"/></l>	<r>Kamala<s n="np"/></r></p></e>
+<e> <p><l>सुभिक्षा<s n="np"/></l>	<r>Subhiksha<s n="np"/></r></p></e>
+<e> <p><l>ऋचा<s n="np"/></l>	<r>Richa<s n="np"/></r></p></e>
+<e> <p><l>शोभा<s n="np"/></l>	<r>Shobha<s n="np"/></r></p></e>
+<e> <p><l>समीक्षा<s n="np"/></l>	<r>Samiksha<s n="np"/></r></p></e>
 
-
-	<!--proper noun-->
-
+<!-- Name of Places -->
 <e>       <p><l>काठ्माण्डौँ<s n="np"/></l>                 <r>Kathmandu<s n="np"/></r></p></e>
 
-<e>       <p><l>राम<s n="np"/></l>                 <r>Ram<s n="np"/></r></p></e>
-<e>       <p><l>गोविन्द<s n="np"/></l>             <r>Govind<s n="np"/></r></p></e>
-<e>       <p><l>अशोक<s n="np"/></l>                <r>Ashok<s n="np"/></r></p></e>
-<e>       <p><l>हरि<s n="np"/></l>                 <r>Hari<s n="np"/></r></p></e>
-<e>       <p><l>सीता<s n="np"/></l>                <r>Sita<s n="np"/></r></p></e>
-<e>       <p><l>गीता<s n="np"/></l>                <r>Gita<s n="np"/></r></p></e>
-<e>       <p><l>रीता<s n="np"/></l>                <r>Rita<s n="np"/></r></p></e>
-<e>       <p><l>कमल<s n="np"/></l>                 <r>Kamala<s n="np"/></r></p></e>
-<e>       <p><l>गोपाल<s n="np"/></l>               <r>Gopal<s n="np"/></r></p></e>
-<e>       <p><l>सुभिक्षा<s n="np"/></l>            <r>Subhiksha<s n="np"/></r></p></e>
-<e>       <p><l>ऋचा<s n="np"/></l>                 <r>Richa<s n="np"/></r></p></e>
-<e>       <p><l>शोभा<s n="np"/></l>                <r>Shobha<s n="np"/></r></p></e>
-<e>       <p><l>हेमराज<s n="np"/></l>              <r>Hemaraj<s n="np"/></r></p></e>
-<e>       <p><l>योगराज<s n="np"/></l>              <r>Yogaraj<s n="np"/></r></p></e>
-<e>       <p><l>समीक्षा<s n="np"/></l>             <r>Samiksha<s n="np"/></r></p></e>
+	<!--proper noun-->
 <e>       <p><l>आवास<s n="n"/></l>                 <r>residence<s n="n"/></r></p></e>
 <e>       <p><l>अलबानियन<s n="n"/></l>             <r>Albanian<s n="n"/></r></p></e>
 <e>       <p><l>अरब<s n="n"/></l>                  <r>Arab<s n="n"/></r></p></e>

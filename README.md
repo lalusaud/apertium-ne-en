@@ -1,4 +1,4 @@
-** Apertium based Nepali and English Language Translation System **
+### Apertium based Nepali and English Language Translation System
 
 More details can be found at [Apertium Website][1]
 

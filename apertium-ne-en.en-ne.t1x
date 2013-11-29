@@ -509,7 +509,7 @@
               <clip pos="2" side="tl" part="whole"/>
 	      <clip pos="3" side="tl" part="a_gen"/>
             </lu>
-	  <b pos="2"/>
+	    <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>

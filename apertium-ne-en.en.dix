@@ -11191,7 +11191,7 @@ zig-zag__vblex
 <e lm="zone"><i>zon</i><par n="liv/e__vblex"/></e>
 <e lm="zone"><i>zone</i><par n="house__n"/></e>
 
-<!-- Nepali Names -->
+<!-- Name of people : male -->
 <e lm="Ram"><i>Ram</i><par n="Mark__np"/></e>
 <e lm="Shyam"><i>Shyam</i><par n="Mark__np"/></e>
 <e lm="Hari"><i>Hari</i><par n="Mark__np"/></e>
@@ -11208,6 +11208,7 @@ zig-zag__vblex
 <e lm="Hemraj"><i>Hemraj</i><par n="Mark__np"/></e>
 <e lm="Yograj"><i>Yograj</i><par n="Mark__np"/></e>
 
+<!-- Name of people : female -->
 <e lm="Sita"><i>Sita</i><par n="Mary__np"/></e>
 <e lm="Gita"><i>Gita</i><par n="Mary__np"/></e>
 <e lm="Laxmi"><i>Laxmi</i><par n="Mary__np"/></e>

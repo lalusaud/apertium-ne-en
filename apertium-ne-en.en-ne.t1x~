@@ -1018,12 +1018,14 @@
       </pattern>
       <action>
 	<out>
-	  <chunk name="vbdo" case="caseFirstWord">
+	  <chunk name="det" case="caseFirstWord">
 	    <tags>
-	      <tag><lit-tag v="vbdo"/></tag>
+	      <tag><lit-tag v="DET"/></tag>
+	      <tag><clip pos="1" side="tl" part="gen"/></tag>
+	      <tag><clip pos="1" side="tl" part="nbr"/></tag>
 	    </tags>
 	    <lu>
-	      <clip pos="1" side="tl" part="whole"/>
+	      <clip pos="1" side="tl" part="whole"/> 
 	    </lu>	
 	  </chunk>
 	</out>

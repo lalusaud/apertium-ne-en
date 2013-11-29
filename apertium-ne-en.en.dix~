@@ -11191,7 +11191,7 @@ zig-zag__vblex
 <e lm="zone"><i>zon</i><par n="liv/e__vblex"/></e>
 <e lm="zone"><i>zone</i><par n="house__n"/></e>
 
-<!-- Nepali Names -->
+<!-- Name of people : male -->
 <e lm="Ram"><i>Ram</i><par n="Mark__np"/></e>
 <e lm="Shyam"><i>Shyam</i><par n="Mark__np"/></e>
 <e lm="Hari"><i>Hari</i><par n="Mark__np"/></e>
@@ -11212,8 +11212,16 @@ zig-zag__vblex
 <e lm="Gita"><i>Gita</i><par n="Mary__np"/></e>
 <e lm="Laxmi"><i>Laxmi</i><par n="Mary__np"/></e>
 <e lm="Tara"><i>Tara</i><par n="Mary__np"/></e>
-
-
+<e lm="Maya"><i>Maya</i><par n="Mary__np"/></e>
+<e lm="Renu"><i>Renu</i><par n="Mary__np"/></e>
+<e lm="Radha"><i>Radha</i><par n="Mary__np"/></e>
+<e lm="Saraswati"><i>Saraswati</i><par n="Mary__np"/></e>
+<e lm="Rita"><i>Rita</i><par n="Mary__np"/></e>
+<e lm="Kamala"><i>Kamala</i><par n="Mary__np"/></e>
+<e lm="Subhiksha"><i>Subhiksha</i><par n="Mary__np"/></e>
+<e lm="Richa"><i>Richa</i><par n="Mary__np"/></e>
+<e lm="Shobha"><i>Shobha</i><par n="Mary__np"/></e>
+<e lm="Samiksha"><i>Samiksha</i><par n="Mary__np"/></e>
 
     <!-- Antonyms -->
 <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>

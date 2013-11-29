@@ -11194,12 +11194,26 @@ zig-zag__vblex
 <!-- Nepali Names -->
 <e lm="Ram"><i>Ram</i><par n="Mark__np"/></e>
 <e lm="Shyam"><i>Shyam</i><par n="Mark__np"/></e>
+<e lm="Hari"><i>Hari</i><par n="Mark__np"/></e>
+<e lm="Sunil"><i>Sunil</i><par n="Mark__np"/></e>
 <e lm="Nabraj"><i>Nabraj</i><par n="Mark__np"/></e>
+<e lm="Deepak"><i>Deepak</i><par n="Mark__np"/></e>
+<e lm="Surendra"><i>Surendra</i><par n="Mark__np"/></e>
+<e lm="Ramesh"><i>Ramesh</i><par n="Mark__np"/></e>
+<e lm="Dipesh"><i>Dipesh</i><par n="Mark__np"/></e>
+<e lm="Suresh"><i>Suresh</i><par n="Mark__np"/></e>
+<e lm="Govind"><i>Govind</i><par n="Mark__np"/></e>
+<e lm="Ashok"><i>Ashok</i><par n="Mark__np"/></e>
+<e lm="Gopal"><i>Gopal</i><par n="Mark__np"/></e>
+<e lm="Hemraj"><i>Hemraj</i><par n="Mark__np"/></e>
+<e lm="Yograj"><i>Yograj</i><par n="Mark__np"/></e>
+
 <e lm="Sita"><i>Sita</i><par n="Mary__np"/></e>
 <e lm="Gita"><i>Gita</i><par n="Mary__np"/></e>
 <e lm="Laxmi"><i>Laxmi</i><par n="Mary__np"/></e>
 <e lm="Tara"><i>Tara</i><par n="Mary__np"/></e>
-<e lm="Deepak"><i>Deepak</i><par n="Mark__np"/></e>
+
+
 
     <!-- Antonyms -->
 <e lm="Robert"><i>Robert</i><par n="Mark__np"/></e>

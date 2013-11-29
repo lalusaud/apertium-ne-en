@@ -3,7 +3,7 @@
 	Dictionary:
 	Sections: 1
 	Entries: 135
-	Sdefs: 51
+	Sdefs: 60
 
 -->
 <dictionary>
@@ -189,7 +189,7 @@
 <!-- Name of Places -->
 <e>       <p><l>काठ्माण्डौँ<s n="np"/></l>                 <r>Kathmandu<s n="np"/></r></p></e>
 
-	<!--proper noun-->
+<!--proper noun-->
 <e>       <p><l>आवास<s n="n"/></l>                 <r>residence<s n="n"/></r></p></e>
 <e>       <p><l>अलबानियन<s n="n"/></l>             <r>Albanian<s n="n"/></r></p></e>
 <e>       <p><l>अरब<s n="n"/></l>                  <r>Arab<s n="n"/></r></p></e>

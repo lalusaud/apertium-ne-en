@@ -17,6 +17,7 @@
 		<sdef n="det" />
 		<sdef n="ind" />
 		<sdef n="itg" />
+		<sdef n="ij" />
 		<sdef n="prn" /> 
 		<sdef n="pri" /> 
 		<sdef n="mf" /> 
@@ -254,6 +255,9 @@
 <e>       <p><l>दै</l>                              <r><s n="vblex"/><s n="ger"/></r></p></e>
 </pardef>
 
+<pardef n="नमस्कार__ij">
+<e>       <p><l></l>                                   <r><s n="ij"/></r></p></e>
+</pardef>
 
 <!--
 
@@ -718,6 +722,9 @@
 
 <!-- Preadverbs -->
 <e lm="धेरै"><i>धेरै</i><par n="धेरै__preadv"/></e>
+
+<!-- Interjection -->
+<e lm="नमस्कार"><i>नमस्कार</i><par n="नमस्कार__ij"/></e>
 
 <!-- Adverbs -->
 <e lm="राम्रो"><i>राम्रो</i><par n="सायद__adv"/></e>

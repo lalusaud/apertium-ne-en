@@ -112,9 +112,6 @@
 <e>       <p><l>राम्रो<s n="adv"/></l>               <r>good<s n="adv"/></r></p></e>
 <e>       <p><l>नराम्रो<s n="adj"/></l>               <r>bad<s n="adj"/></r></p></e>
 
-
-
-
 <e>       <p><l>घर<s n="n"/></l>   <r>house<s n="n"/></r></p></e>
 <e>	  <p><l>बिद्यार्थी<s n="n"/></l>	<r>student<s n="n"/></r></p></e>
 <e>       <p><l>कम्प्युटर<s n="n"/></l>            <r>computer<s n="n"/></r></p></e>
@@ -154,6 +151,20 @@
 
 <e>       <p><l>हु<s n="vblex"/></l> <r>be<s n="vbser"/></r></p></e>
 
+<!-- Relationships -->
+<e> <p><l>बुवा<s n="n"/><s n="m"/></l> 	<r>father<s n="n"/></r></p> </e>
+<e> <p><l>आमा<s n="n"/><s n="f"/></l> 	<r>mother<s n="n"/></r></p> </e>
+<e> <p><l>छोरा<s n="n"/><s n="m"/></l> 	<r>son<s n="n"/></r></p> </e>
+<e> <p><l>छोरी<s n="n"/><s n="f"/></l> 	<r>daugher<s n="n"/></r></p> </e>
+<e> <p><l>अंकल<s n="n"/><s n="m"/></l>  <r>uncle<s n="n"/></r></p> </e>
+<e> <p><l>अण्टी<s n="n"/><s n="f"/></l> 	<r>aunt<s n="n"/></r></p> </e>
+<e> <p><l>भाइ<s n="n"/><s n="m"/></l>   <r>brother<s n="n"/></r></p></e>
+<e> <p><l>भाइ<s n="n"/><s n="m"/></l>   <r>younger<b/>brother<s n="n"/></r></p></e>
+<e> <p><l>दाइ<s n="n"/><s n="m"/></l>   <r>elder<b/>brother<s n="n"/></r></p></e>
+<e> <p><l>बहिनी<s n="n"/><s n="f"/></l>  <r>sister<s n="n"/></r></p> </e>
+<e> <p><l>बहिनी<s n="n"/><s n="f"/></l>  <r>younger<b/>sister<s n="n"/></r></p></e>
+<e> <p><l>दिदी<s n="n"/><s n="f"/></l>   <r>elder<b/>sister<s n="n"/></r></p></e>
+
 <!-- Name of people : male -->
 <e> <p><l>राम<s n="np"/></l> 	<r>Ram<s n="np"/></r></p> </e>
 <e> <p><l>श्याम<s n="np"/></l> 	<r>Shyam<s n="np"/></r></p> </e>
@@ -189,8 +200,50 @@
 
 <!-- Name of Places -->
 <e>       <p><l>काठ्माण्डौँ<s n="np"/></l>                 <r>Kathmandu<s n="np"/></r></p></e>
+<e>       <p><l>पोखरा<s n="np"/></l>                 <r>Pokhara<s n="np"/></r></p></e>
+<e>       <p><l>बुटवल<s n="np"/></l>                 <r>Butwal<s n="np"/></r></p></e>
+<e>       <p><l>नेपालगंज<s n="np"/></l>                 <r>Nepalgunj<s n="np"/></r></p></e>
+<e>       <p><l>भैरहवा<s n="np"/></l>                 <r>Bhairahawa<s n="np"/></r></p></e>
+<e>       <p><l>धनगढी<s n="np"/></l>                 <r>Dhangadhi<s n="np"/></r></p></e>
+<e>       <p><l>महेन्द्रनगर<s n="np"/></l>                 <r>Mahendrangar<s n="np"/></r></p></e>
+<e>       <p><l>इटहरि<s n="np"/></l>                 <r>Itahari<s n="np"/></r></p></e>
+<e>       <p><l>दमक<s n="np"/></l>                 <r>Damak<s n="np"/></r></p></e>
+<e>       <p><l>बिराटनगर<s n="np"/></l>                 <r>Biratnagar<s n="np"/></r></p></e>
+<e>       <p><l>दिल्ली<s n="np"/></l>                 <r>Delhi<s n="np"/></r></p></e>
+<e>       <p><l>मुम्बई<s n="np"/></l>                 <r>Mumbai<s n="np"/></r></p></e>
+
+<!-- Name of Zones -->
+<e>       <p><l>मेची<s n="np"/></l>                 <r>Mechi<s n="np"/></r></p></e>
+<e>       <p><l>कोशी<s n="np"/></l>                 <r>Koshi<s n="np"/></r></p></e>
+<e>       <p><l>सगरमाथा<s n="np"/></l>                 <r>Sagarmatha<s n="np"/></r></p></e>
+<e>       <p><l>जनकपुर<s n="np"/></l>                 <r>Janakpur<s n="np"/></r></p></e>
+<e>       <p><l>बागमती<s n="np"/></l>                 <r>Bagmati<s n="np"/></r></p></e>
+<e>       <p><l>नारायणी<s n="np"/></l>                 <r>Narayani<s n="np"/></r></p></e>
+<e>       <p><l>गण्डकी<s n="np"/></l>                 <r>Gandaki<s n="np"/></r></p></e>
+<e>       <p><l>लुम्बिनी<s n="np"/></l>                 <r>Lumbini<s n="np"/></r></p></e>
+<e>       <p><l>धवलागिरी<s n="np"/></l>                 <r>Dhawalagiri<s n="np"/></r></p></e>
+<e>       <p><l>राप्ती<s n="np"/></l>                 <r>Rapti<s n="np"/></r></p></e>
+<e>       <p><l>कर्णाली<s n="np"/></l>                 <r>Karnali<s n="np"/></r></p></e>
+<e>       <p><l>भेरी<s n="np"/></l>                 <r>Bheri<s n="np"/></r></p></e>
+<e>       <p><l>सेती<s n="np"/></l>                 <r>Seti<s n="np"/></r></p></e>
+<e>       <p><l>महाकाली<s n="np"/></l>                 <r>Mahakali<s n="np"/></r></p></e>
+
+<!-- Name of Countries -->
+<e>       <p><l>नेपाल<s n="np"/></l>                 <r>Nepal<s n="np"/></r></p></e>
+<e>       <p><l>भारत<s n="np"/></l>                 <r>India<s n="np"/></r></p></e>
+<e>       <p><l>बांग्लादेश<s n="np"/></l>                 <r>Bangladesh<s n="np"/></r></p></e>
+<e>       <p><l>श्रीलंका<s n="np"/></l>                 <r>Sri<b/>Lanka<s n="np"/></r></p></e>
+<e>       <p><l>पाकिस्तान<s n="np"/></l>                 <r>Pakistan<s n="np"/></r></p></e>
+<e>       <p><l>अफ्गानिस्तान<s n="np"/></l>                 <r>Afganistan<s n="np"/></r></p></e>
+<e>       <p><l>थाईल्याण्ड<s n="np"/></l>                 <r>Thailand<s n="np"/></r></p></e>
+<e>       <p><l>मलेशिया<s n="np"/></l>                 <r>Malaysia<s n="np"/></r></p></e>
+<e>       <p><l>सिंगापुर<s n="np"/></l>                 <r>Singapore<s n="np"/></r></p></e>
+<e>       <p><l>चीन<s n="np"/></l>                 <r>China<s n="np"/></r></p></e>
+<e>       <p><l>रसिया<s n="np"/></l>                 <r>Russia<s n="np"/></r></p></e>
+
 
 <!--proper noun-->
+<e>	  <p><l>अञ्चल<s n="n"/></l>		    <r>zone<s n="n"/></r></p></e>
 <e>       <p><l>आवास<s n="n"/></l>                 <r>residence<s n="n"/></r></p></e>
 <e>       <p><l>अलबानियन<s n="n"/></l>             <r>Albanian<s n="n"/></r></p></e>
 <e>       <p><l>अरब<s n="n"/></l>                  <r>Arab<s n="n"/></r></p></e>
@@ -219,9 +272,6 @@
 <e>       <p><l>लेखा परीक्षक<s n="n"/></l>         <r>auditor<s n="n"/></r></p></e>
 <e>       <p><l>जीब वैज्ञानिक<s n="n"/></l>        <r>biologist<s n="n"/></r></p></e>
 <e>       <p><l>हाकिम<s n="n"/></l>              <r>boss<s n="n"/></r></p></e>
-<e>       <p><l>भाइ<s n="n"/><s n="m"/></l>      <r>brother<s n="n"/></r></p></e>
-<e>       <p><l>भाइ<s n="n"/><s n="m"/></l>      <r>younger<b/>brother<s n="n"/></r></p></e>
-<e>       <p><l>दाइ<s n="n"/><s n="m"/></l>      <r>elder<b/>brother<s n="n"/></r></p></e>
 <e>       <p><l>उमेद्वार<s n="n"/></l>             <r>candidate<s n="n"/></r></p></e>
 <e>       <p><l>क्याप्टेन<s n="n"/></l>            <r>captain<s n="n"/></r></p></e>
 <e>       <p><l>बिरालो<s n="n"/></l>               <r>cat<s n="n"/></r></p></e>
@@ -313,7 +363,12 @@
 	
 <!-- Preadverbs -->
 <e> 	 <p><l>धेरै<s n="preadv"/></l> 				  <r>very<s n="preadv"/></r></p></e>
-    
+
+<!-- Prepositions -->
+<e>	  <p><l>मा<s n="pr"/></l>		     <r>in<s n="pr"/></r></p></e>
+<e>	  <p><l>मा<s n="pr"/></l>		     <r>at<s n="pr"/></r></p></e>
+<e>	  <p><l>को<s n="pr"/></l>		     <r>of<s n="pr"/></r></p></e>
+
 <!-- Interjection -->
 <e> 	 <p><l>नमस्कार<s n="ij"/></l> 				  <r>hello<s n="ij"/></r></p></e>
 

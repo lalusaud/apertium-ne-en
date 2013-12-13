@@ -4014,6 +4014,19 @@ zig-zag__vblex
 <e lm="David"><i>David</i><par n="Mark__np"/></e>
 <e lm="Denmark"><i>Denmark</i><par n="Barcelona__np"/></e>
 <e lm="Kathmandu"><i>Kathmandu</i><par n="Barcelona__np"/></e>
+<e lm="Pokhara"><i>Pokhara</i><par n="Barcelona__np"/></e>
+<e lm="Butwal"><i>Butwal</i><par n="Barcelona__np"/></e>
+<e lm="Nepalgunj"><i>Nepalgunj</i><par n="Barcelona__np"/></e>
+<e lm="Bhairahawa"><i>Bhairahawa</i><par n="Barcelona__np"/></e>
+<e lm="Dhangadhi"><i>Dhangadhi</i><par n="Barcelona__np"/></e>
+<e lm="Mahendranagar"><i>Mahendranagar</i><par n="Barcelona__np"/></e>
+<e lm="Itahari"><i>Itahari</i><par n="Barcelona__np"/></e>
+<e lm="Damak"><i>Damak</i><par n="Barcelona__np"/></e>
+<e lm="Biratnagar"><i>Biratnagar</i><par n="Barcelona__np"/></e>
+<e lm="Delhi"><i>Delhi</i><par n="Barcelona__np"/></e>
+<e lm="Mumbai"><i>Mumbai</i><par n="Barcelona__np"/></e>
+
+
 <e lm="Diego"><i>Diego</i><par n="Mark__np"/></e>
 <e lm="Diego"><i>Diego</i><par n="Mark__np"/></e>
 <e lm="Diego"><i>Diego</i><par n="Mark__np"/></e>
@@ -4177,7 +4190,29 @@ zig-zag__vblex
 <e lm="Muslim"><i>Muslim</i><par n="house__n"/></e>
 <e lm="Muslim"><i>Muslim</i><par n="expensive__adj"/></e>
 <e lm="Navarra"><i>Navarra</i><par n="Barcelona__np"/></e>
+
 <e lm="Nepal"><i>Nepal</i><par n="Barcelona__np"/></e>
+<e lm="Bangladesh"><i>Bangladesh</i><par n="Barcelona__np"/></e>
+<e lm="Sri Lanka"><i>Sri<b/>Lanka</i><par n="Barcelona__np"/></e>
+<e lm="Malaysia"><i>Malaysia</i><par n="Barcelona__np"/></e>
+<e lm="Afganistan"><i>Afganistan</i><par n="Barcelona__np"/></e>
+
+<!-- Name of Zones -->
+<e lm="Mechi"><i>Mechi</i><par n="Barcelona__np"/></e>
+<e lm="Koshi"><i>Koshi</i><par n="Barcelona__np"/></e>
+<e lm="Sagarmatha"><i>Sagarmatha</i><par n="Barcelona__np"/></e>
+<e lm="Janakpur"><i>Janakpur</i><par n="Barcelona__np"/></e>
+<e lm="Bagmati"><i>Bagmati</i><par n="Barcelona__np"/></e>
+<e lm="Narayani"><i>Narayani</i><par n="Barcelona__np"/></e>
+<e lm="Gandaki"><i>Gandaki</i><par n="Barcelona__np"/></e>
+<e lm="Lumbini"><i>Lumbini</i><par n="Barcelona__np"/></e>
+<e lm="Dhawalagiri"><i>Dhawalagiri</i><par n="Barcelona__np"/></e>
+<e lm="Rapti"><i>Rapti</i><par n="Barcelona__np"/></e>
+<e lm="Karnali"><i>Karnali</i><par n="Barcelona__np"/></e>
+<e lm="Bheri"><i>Bheri</i><par n="Barcelona__np"/></e>
+<e lm="Seti"><i>Seti</i><par n="Barcelona__np"/></e>
+<e lm="Mahakali"><i>Mahakali</i><par n="Barcelona__np"/></e>
+
 <e lm="New York"><i>New<b/>York</i><par n="Barcelona__np"/></e>
 <e lm="New York"><i>New<b/>York</i><par n="Barcelona__np"/></e>
 <e lm="New Zealand"><i>New<b/>Zealand</i><par n="Barcelona__np"/></e>
@@ -5322,7 +5357,7 @@ zig-zag__vblex
 <e lm="childish"><i>childish</i><par n="expensive__adj"/></e>
 <e lm="chimaera"><i>chimaera</i><par n="house__n"/></e>
 <e lm="chin"><i>chin</i><par n="house__n"/></e>
-<e lm="china"><i>china</i><par n="house__n"/></e>
+<!-- <e lm="china"><i>china</i><par n="house__n"/></e> -->
 <e lm="chip"><i>chip</i><par n="house__n"/></e>
 <e lm="chlorine"><i>chlorine</i><par n="house__n"/></e>
 <e lm="choose"><i>cho</i><par n="cho/ose__vblex"/></e>

@@ -92,13 +92,13 @@
 		<sdef n="tam:ई" 	c="ई"/> 
 		<sdef n="tam:नुभयो" 	c="नुभयो"/> 
 		<sdef n="tam:0" 	c="0"/> 
-		<sdef n="sent" /> 
+		<sdef n="sent" 	c="Sentence marker"/>
 	</sdefs>
 	<pardefs>
     <!-- Punctuation -->
 
 <pardef n="separa">
-<e>       <re>[.\?;:!]</re><p><l></l>                  <r><s n="sent"/></r></p></e>
+<e>       <re>[।.\?;:!]</re><p><l></l>                  <r><s n="sent"/></r></p></e>
 </pardef>
 
 <!-- Interrogation -->
@@ -425,8 +425,10 @@
 
 <e lm="ले"><i>ले</i><par n="post"/></e>
 
+<!--
 <e lm="मा"><i>मा</i><par n="post"/></e>
 <e lm="को"><i>को</i><par n="post"/></e>
+-->
 
     <!-- Conjunctions -->
 
@@ -688,7 +690,6 @@
 <e lm="अंकल"><i>अंकल</i><par n="भाइ__n"/></e>
 <e lm="भाइ"><i>भाइ</i><par n="भाइ__n"/></e>
 <e lm="दाइ"><i>दाइ</i><par n="भाइ__n"/></e>
-
 <e lm="आमा"><i>आमा</i><par n="बहिनी__n"/></e>
 <e lm="छोरी"><i>छोरी</i><par n="बहिनी__n"/></e>
 <e lm="अण्टी"><i>अण्टी</i><par n="बहिनी__n"/></e>
@@ -794,8 +795,20 @@
 <e lm="राम्रो"><i>राम्रो</i><par n="सायद__adv"/></e>
 <e lm="नराम्रो"><i>नराम्रो</i><par n="सायद__adv"/></e>
 
+<e lm="।"><i>।</i><par n="separa"/></e>
     
 	</section>
 	<section id="final" type="inconditional">
+	    <!-- <e><par n="numeros"/></e> -->
+	    <e><par n="separa"/></e>
+	    <!--
+	    <e><par n="coma"/></e>
+	    <e><par n="cometa"/></e>
+	    <e><par n="paresq"/></e>
+	    <e><par n="pardret"/></e>
+	    <e><par n="separ"/></e>
+	    <e><par n="guionet"/></e>
+	    <e><re>[$€£]</re><p><l></l><r><s n="mon"/></r></p></e>
+	    -->
 	</section>
 </dictionary>

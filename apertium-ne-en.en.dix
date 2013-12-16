@@ -74,7 +74,7 @@
 		<sdef n="num" /> 
 		<sdef n="pron" /> 
 		<sdef n="ij" /> 
-		<sdef n="sent" /> 
+		<sdef n="sent" 	c="Sentence marker"/>  
 		<sdef n="cm" /> 
 		<sdef n="lpar" /> 
 		<sdef n="rpar" /> 
@@ -196,9 +196,14 @@
 <e>       <re>(St|Sir|Lord|Rt Hon|Mr|Miss|Ms|Mrs|Dr|Don).? ([A-Z][a-z]*|[A-Z][a-z]* [A-Z][a-z]*|[A-Z][a-z]* [A-Z].? [A-Z][a-z]*)</re><p><l></l><r><s n="np"/><s n="ant"/><s n="mf"/><s n="sg"/></r></p></e>
 </pardef>
 
-
 <pardef n="separa">
-<e>       <re>[.\?;:!]</re><p><l></l>                  <r><s n="sent"/></r></p></e>
+    <e>
+      <re>[.\?;:!]</re>
+      <p>
+        <l></l>
+        <r><s n="sent"/></r>
+      </p>
+    </e>
 </pardef>
     
     
@@ -11316,12 +11321,21 @@ zig-zag__vblex
 <e lm="disturb"><i>disturb</i><par n="accept__vblex"/></e>
 <e lm="website"><i>website</i><par n="house__n"/></e>
 
-
-<!--    <e lm="centralise"><i>centrali</i><par n="authori/se__vblex"/></e> -->
-<!--    <e lm="centralisation"><i>centrali</i><par n="organi/sation__n"/></e> -->
+		<e lm="."><i>.</i><par n="separa"/></e>
 
 	</section>
 	<section id="final" type="inconditional">
+	    <!-- <e><par n="numeros"/></e> -->
+	    <e><par n="separa"/></e>
+	    <!--
+	    <e><par n="coma"/></e>
+	    <e><par n="cometa"/></e>
+	    <e><par n="paresq"/></e>
+	    <e><par n="pardret"/></e>
+	    <e><par n="separ"/></e>
+	    <e><par n="guionet"/></e>
+	    <e><re>[$€£]</re><p><l></l><r><s n="mon"/></r></p></e>
+	    -->
 	</section>
 	<section id="apostrophe" type="preblank">
 <e>       <p><l>'s</l>                                 <r>'s<s n="gen"/></r></p></e>

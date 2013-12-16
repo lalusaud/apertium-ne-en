@@ -41,7 +41,8 @@
 		<sdef n="adv"	c="adverb"/>
 		<sdef n="preadv" c="preadverb"/>
 		<sdef n="post" /> 
-		<sdef n="pr" /> 
+		<sdef n="pr" />
+		<sdef n="sent" c="Sentence Marker"/>
 
 		<sdef n="hon:lh" 	c="low_honorific"/> 
 		<sdef n="hon:mh" 	c="mid_honorific"/> 
@@ -308,11 +309,6 @@
 <e> 	  <p><l>किन<s n="det"/><s n="itg"/></l> 	<r>why<s n="det"/><s n="itg"/></r></p></e>
 <e> 	  <p><l>कसरी<s n="det"/><s n="itg"/></l> 	<r>how<s n="det"/><s n="itg"/></r></p></e>
 <e> 	  <p><l>कहिले<s n="det"/><s n="itg"/></l> 	<r>when<s n="det"/><s n="itg"/></r></p></e>
-
-    
-<e>       <p><l>मा<s n="post"/></l>             <r>on<s n="pr"/></r></p></e>
-<e>       <p><l>मा<s n="post"/></l>             <r>in<s n="pr"/></r></p></e>
-<e>       <p><l>को<s n="post"/></l>             <r>'s<s n="gen"/></r></p></e>
     
      <!-- Verbs -->
 
@@ -367,11 +363,18 @@
 <!-- Prepositions -->
 <e>	  <p><l>मा<s n="pr"/></l>		     <r>in<s n="pr"/></r></p></e>
 <e>	  <p><l>मा<s n="pr"/></l>		     <r>at<s n="pr"/></r></p></e>
-<e>	  <p><l>को<s n="pr"/></l>		     <r>of<s n="pr"/></r></p></e>
+<e>	  <p><l>को<s n="pr"/></l>		     <r>of<s n="pr"/></r></p></e>    
+<!--
+<e>       <p><l>मा<s n="post"/></l>             <r>on<s n="pr"/></r></p></e>
+<e>       <p><l>मा<s n="post"/></l>             <r>in<s n="pr"/></r></p></e>
+-->
+<e>       <p><l>को<s n="post"/></l>             <r>'s<s n="gen"/></r></p></e>
 
 <!-- Interjection -->
 <e> 	 <p><l>नमस्कार<s n="ij"/></l> 				  <r>hello<s n="ij"/></r></p></e>
 
+<!-- Separa -->
+<e>	<p><l>।<s n="sent"/></l>		<r>.<s n="sent"/></r></p></e>
     
 	</section>
 </dictionary>

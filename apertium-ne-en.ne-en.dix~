@@ -150,7 +150,7 @@
 
 <e>       <p><l>तिर<s n="n"/></l> <r>direction<s n="n"/></r></p></e>
 
-<e>       <p><l>हु<s n="vblex"/></l> <r>be<s n="vbser"/></r></p></e>
+<e>       <p><l>हु<s n="vbser"/></l> <r>be<s n="vbser"/></r></p></e>
 
 <!-- Relationships -->
 <e> <p><l>बुवा<s n="n"/><s n="m"/></l> 	<r>father<s n="n"/></r></p> </e>
@@ -374,7 +374,7 @@
 <e> 	 <p><l>नमस्कार<s n="ij"/></l> 				  <r>hello<s n="ij"/></r></p></e>
 
 <!-- Separa -->
-<e>	<p><l> ।<s n="sent"/></l>		<r>.<s n="sent"/></r></p></e>
+<e>	<p><l>।<s n="sent"/></l>		<r>.<s n="sent"/></r></p></e>
     
 	</section>
 </dictionary>

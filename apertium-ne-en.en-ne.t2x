@@ -5,8 +5,6 @@
     <def-cat n="SN">
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
-      <cat-item tags="vbser"/>
-      <cat-item tags="vbser.*"/>
     </def-cat>
     <def-cat n="SVpast">
       <cat-item tags="SV.past"/>
